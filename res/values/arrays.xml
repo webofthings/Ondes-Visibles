@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="hf_devices_array">
+        <item>DECT (téléphone sans fil)</item>
+        <item>Téléphone mobile</item>
+        <item>Borne WiFi</item>
+        <item>Autre...</item>
+    </string-array>
+    <string-array name="lf_devices_array">
+        <item>Prise électrique</item>
+        <item>Perceuse</item>
+        <item>Réveil</item>
+        <item>Borne WiFi</item>
+        <item>Autre...</item>
+    </string-array>
+    <string-array name="exp_lf_instructions">
+        <item>"Les prise électriques émettent des champs magnétiques. Allumez le bouton de la multi-prise et testez le champs tout près avec le capteur (ne mettez pas l'antenne dans le trou!). Le champs capté est un champs type magnétique à basse-fréquence (50 Hz). Reculez maintenant le capteur de quelques centimètres. L'intensité du champs baisse. Au bout de quelle distance le capteur ne détecte-il plus rien? Que ce passe-t-il lorsque l'on éteint le bouton de la multi-prise ?"</item>
+        <item>"A cause de la taille importante de son moteur, une perceuse génère un champs magnétique relativement important. Allumez la perceuse et mettez-là en marche. Demandez maintenant à une autre personne de la tenir en marche et de s'éloigner progressivement du capteur. Au bout de quelle distance le capteur ne détecte-il plus rien? Pourquoi pensez-vous que malgré le champs important la perceuse n'est pas vraiment dangereuse?"</item>
+    </string-array>
+    <string-array name="exp_lf_conclusions">
+        <item>"Mieux vaut éteindre les prises afin d'économiser de l'énergie et de minimiser les ondes. Comme l'on observe qu'à ~30 cm le champs n'est plus détecté, placer les prises au minimum à 1 m de notre corps (de notre lit par exemple) semble une bonne idée."</item>
+        <item>"Plus le moteur électrique est gros plus le champs magnétique devient fort. Toutefois comme l'on est exposé pour de courtes durées à ces champs ils sont pratiquement inoffensifs. La longueur d'exposition à un champs est donc un facteur important."</item>
+    </string-array>
+    <string-array name="exp_hf_instructions">
+        <item>bla</item>
+    </string-array>
+    <string-array name="exp_hf_conclusions">
+        <item>bla</item>
+    </string-array>
+    <string-array name="frequencies_array">
+        <item>Basses-fréquences (>30 kHz)</item>
+        <item>Hautes-fréquences (>30 kHz)</item>
+    </string-array>
+    <string-array name="tutorials">
+        <item>Champs électromagnétiques et électrosmog</item>
+        <item>Fréquences électromagnétiques</item>
+        <item>Risques et effets</item>
+        <item>Prévention</item>
+    </string-array>
+</resources>

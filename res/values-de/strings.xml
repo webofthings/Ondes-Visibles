@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">EMF-Uncovered</string>
+    <string name="info_activity_title">Informations</string>
+    <string name="home">retour...</string>
+    <string name="chart_activity_title">Chart</string>
+    <string name="BF_activity_title">Basses Fréquences</string>
+    <string name="device_picker_activity_title">"Choix d'appareils"</string>
+    <string name="field_selection_title">Choix de fréquence</string>
+    <string name="experiment_title">Expérience</string>
+    <string name="next_experiment">experience suivante</string>
+    <string name="previous_experiment">experience précédente</string>
+    <string name="lf_info">Ipsum low lorem!</string>
+    <string name="hf_info">Ipsum high lorem!</string>
+</resources>

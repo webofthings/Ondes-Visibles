@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="hf_devices_array">
+        <item>DECT (Schnurlostelefon)</item>
+        <item>Handy</item>
+        <item>WiFi Router</item>
+        <item>Andere...</item>
+    </string-array>
+    <string-array name="lf_devices_array">
+        <item>Borer</item>
+        <item>Wecker</item>
+        <item>Steckdose</item>
+        <item>WiFi Router</item>
+        <item>Andere...</item>
+    </string-array>
+    <string-array name="frequencies_array">
+        <item>Niederfrequenz (&amp;lt;30 kHz)</item>
+        <item>Hochfrequenz (>3 30 kHz)</item>
+        <item>Modifier la langue...</item>
+    </string-array>
+</resources>

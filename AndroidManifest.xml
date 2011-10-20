@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest android:versionCode="1" android:versionName="1.0" package="com.webofthings.emf"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <application android:label="@string/app_name" android:icon="@drawable/icon" android:debuggable="true">
+        <activity android:label="@string/app_name" android:name=".MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:label="@string/field_selection_title" android:name=".FieldSelectionActivity">
+            <intent-filter>
+                <action android:name="com.webofthings.emf.FIELDSELECTIONACTIVITY" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity android:label="@string/BF_activity_title" android:name=".BFActivity">
+            <intent-filter>
+                <action android:name="com.webofthings.emf.BFACTIVITY" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity android:theme="@android:style/Theme.Black.NoTitleBar.Fullscreen" android:label="@string/chart_activity_title" android:name=".ChartActivity" android:screenOrientation="landscape">
+            <intent-filter>
+                <action android:name="com.webofthings.emf.CHARTACTIVITY" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity android:label="@string/device_picker_activity_name" android:name=".DevicePickerActivity">
+            <intent-filter>
+                <action android:name="com.webofthings.emf.DEVICEPICKERACTIVITY" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity android:label="@string/tutorial_picker_title" android:name=".TutorialPickerActivity">
+            <intent-filter>
+                <action android:name="com.webofthings.emf.TUTORIALPICKERACTIVITY" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity android:label="@string/info_activity_title" android:name=".tutorials.EmfTutorialActivity">
+            <intent-filter>
+                <action android:name="com.webofthings.emf.EMFTUTORIALACTIVITY" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity android:label="@string/info_activity_title" android:name=".tutorials.FrequenciesTutorialActivity">
+            <intent-filter>
+                <action android:name="com.webofthings.emf.FREQUENCYTUTORIALACTIVITY" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity android:label="@string/info_activity_title" android:name=".tutorials.RisksTutorialActivity">
+            <intent-filter>
+                <action android:name="com.webofthings.emf.RISKSTUTORIALACTIVITY" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity android:label="@string/info_activity_title" android:name=".tutorials.PreventionTutorialActivity">
+            <intent-filter>
+                <action android:name="com.webofthings.emf.PREVENTIONTUTORIALACTIVITY" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity android:theme="@android:style/Theme.Dialog" android:label="@string/experiment_activity_title_instructions" android:name=".ExperimentActivity">
+            <intent-filter>
+                <action android:name="com.webofthings.emf.EXPERIMENTACTIVITY" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+    </application>
+    <uses-sdk android:minSdkVersion="3" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+</manifest>
