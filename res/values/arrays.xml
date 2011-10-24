@@ -1,40 +1,162 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string-array name="hf_devices_array">
-        <item>DECT (téléphone sans fil)</item>
-        <item>Téléphone mobile</item>
-        <item>Borne WiFi</item>
-        <item>Autre...</item>
-    </string-array>
+    
     <string-array name="lf_devices_array">
         <item>Prise électrique</item>
         <item>Perceuse</item>
-        <item>Réveil</item>
-        <item>Borne WiFi</item>
+        <item>Eclairages</item>
+        <item>Appareils à transformateurs</item>
+        <item>Autre...</item>
+    </string-array>    
+    
+    <string-array name="exp_lf_instructions">
+        <item>
+        Les prise électriques émettent des champs magnétiques. Allumez le bouton de la 
+        prise-multiple et testez le champ tout près avec le capteur (ne mettez pas l\'antenne 
+        dans le trou, ceci détruirait le capteur!). Le champs capté est un champs type magnétique 
+        à basse-fréquence (50 Hz). Reculez maintenant le capteur de quelques centimètres. L\'intensité 
+        du champs baisse. Au bout de quelle distance le capteur ne détecte-t-il plus rien? Que se 
+        passe-t-il lorsque l\'on éteint le bouton de la multi-prise? Connectez ensuite un appareil 
+        à transformateur à la prise allumée (p.ex. le rasoir), que constatez-vous?
+        </item>
+        
+        <item>
+        A cause de la taille importante de son moteur, une perceuse génère un champs magnétique relativement 
+        important. Allumez la perceuse et mettez-là en marche. Eloignez vous progressivement du capteur. 
+        Au bout de quelle distance le capteur ne détecte-t-il plus rien? Pourquoi pensez-vous que malgré 
+        le champ important la perceuse n\'est pas véritablement dangereuse?
+        </item>
+        
+        <item>
+        Les ampoules génèrent aussi des champs magnétiques mais certaines plus que d\'autres. 
+        Branchez le bloc d\'ampoules. Testez les différentes ampoules, laquelle génère le plus 
+        grand champ, pourquoi? En montant sur une table approchez le détecteur d\'un néon. 
+        Que constatez-vous?
+        </item>
+        
+        <item>
+        Les appareils avec transformateur génèrent des champs magnétiques. 
+        Branchez le routeur WiFi sur la prise-multiple et enclenchez la prise. 
+        Que constatez-vous? Débranchez maintenant la petite prise ronde côté routeur. 
+        Qu\'observez-vous maintenant? Répétez l\'opération avec le rasoir et son transformateur.
+        </item>
+    </string-array>
+    
+    <string-array name="exp_lf_conclusions">
+    	<item>
+    	Mieux vaut éteindre les prises afin d\'économiser de l\'énergie et de minimiser les risques. 
+    	Placer les prises connectées à des appareils au minimum à 1 m de notre corps 
+    	(de notre lit par exemple) semble une bonne idée puisqu\'à cette distance le champ magnétique 
+    	est quasiment nul.
+    	</item>
+    	
+    	<item>
+    	Plus le moteur électrique est gros plus le champs magnétique devient fort. 
+    	Toutefois comme l\'on est exposé pour de très courtes durées à ces champs ils sont 
+    	pratiquement inoffensifs. La longueur d\'exposition à un champ est donc très importante 
+    	dans le calcul du risque.
+    	</item>
+    	
+    	<item>
+    	Les ampoules génèrent des champs magnétiques relativement faible. Toutefois, les ampoules économiques, 
+    	les éclairages halogènes basse-tension et les néons génèrent des champs plus importants. 
+    	Il est donc conseillé de garder une certaine distance (~2 m) avec ces éclairages.
+    	</item>
+    	
+    	<item>
+    	Les transformateurs génèrent des champs magnétiques dès qu\'ils sont branchés 
+    	(et consomment de l\'électricité!) et cela même s\'ils ne sont pas utilisés. 
+    	La taille de ces champs varie en fonction de la taille du transformateur et reste en général 
+    	assez faible. Il est toutefois prudent (et économique!) d\'éteindre les prise-multiples connectées 
+    	à des transformateurs lorsqu\'elle ne sont pas utilisés, en particulier dans les endroits où 
+    	l\'on passe beaucoup de temps (p.ex. la chambre à coucher).
+    	</item>
+    </string-array>
+    
+        
+   <string-array name="hf_devices_array">
+        <item>Téléphone sans fils (DECT)</item>
+        <item>Routeur WiFi</item>
+        <item>Téléphone mobile</item>
         <item>Autre...</item>
     </string-array>
-    <string-array name="exp_lf_instructions">
-        <item>"Les prise électriques émettent des champs magnétiques. Allumez le bouton de la multi-prise et testez le champs tout près avec le capteur (ne mettez pas l'antenne dans le trou!). Le champs capté est un champs type magnétique à basse-fréquence (50 Hz). Reculez maintenant le capteur de quelques centimètres. L'intensité du champs baisse. Au bout de quelle distance le capteur ne détecte-il plus rien? Que ce passe-t-il lorsque l'on éteint le bouton de la multi-prise ?"</item>
-        <item>"A cause de la taille importante de son moteur, une perceuse génère un champs magnétique relativement important. Allumez la perceuse et mettez-là en marche. Demandez maintenant à une autre personne de la tenir en marche et de s'éloigner progressivement du capteur. Au bout de quelle distance le capteur ne détecte-il plus rien? Pourquoi pensez-vous que malgré le champs important la perceuse n'est pas vraiment dangereuse?"</item>
-    </string-array>
-    <string-array name="exp_lf_conclusions">
-        <item>"Mieux vaut éteindre les prises afin d'économiser de l'énergie et de minimiser les ondes. Comme l'on observe qu'à ~30 cm le champs n'est plus détecté, placer les prises au minimum à 1 m de notre corps (de notre lit par exemple) semble une bonne idée."</item>
-        <item>"Plus le moteur électrique est gros plus le champs magnétique devient fort. Toutefois comme l'on est exposé pour de courtes durées à ces champs ils sont pratiquement inoffensifs. La longueur d'exposition à un champs est donc un facteur important."</item>
-    </string-array>
+    
     <string-array name="exp_hf_instructions">
-        <item>bla</item>
+        <item>
+        Branchez le téléphone sans fils (DECT) à la prise. Que constatez-vous? 
+        Continuez votre observation pendant une minute. Que constatez-vous? 
+        Eloignez-vous de quelques mètres, de 10 mètres, allez dans la pièce d\'à côté. 
+        Quelles sont vos mesures?
+        </item>
+        <item>
+        Branchez le routeur WiFi. Que constatez-vous? Et après 30 secondes? 
+        Déplacez-vous dans la pièce et prenez des mesures. Déplacez-vous dans 
+        le bâtiment puis dehors. Jusqu\'à quelle distance pouvez-vous capter le champ? 
+        Changez l\'orientation de l\'antenne. Qu\'observez-vous?
+        </item>
+        <item>
+        Pour cette expérience utilisez votre propre téléphone. 
+        Si vous n\'en avez pas utilisez le Nokia mis à disposition. 
+        Allumez le téléphone et passez un appel à un ami. Essayer de vous 
+        éloigner du détecteur pendant l\'appel. Que constatez-vous? Approchez 
+        le téléphone au plus près du détecteur. Placez maintenant le détecteur au bout 
+        du kit mains libres (~30 cm). Comparez les observations. Comparez également 
+        les différents téléphones dans la salle. Finalement essayez d\'envoyer des SMS ou 
+        de télécharger des données (si vous avez un plan données, sinon ça risque de coûter cher :-/). 
+        Essayez finalement de mettre votre téléphone en mode «avion» que remarquez-vous?
+        </item>
+        
     </string-array>
+    
+    
     <string-array name="exp_hf_conclusions">
-        <item>bla</item>
+        <item>
+        Les téléphones sans fils génèrent des champs haute-fréquence (1880-1900 MHz). 
+        Le standard DECT, qui équipe beaucoup de ces téléphones est fait de telle sorte 
+        que la station de base transmet en permanence un signal et donc génère un champ 
+        (et consomme du courant!) mesurable dans les 100-300 mètres tant qu\'elle est branchée. 
+        Il faut donc éviter de placer la station de base à proximité des chambres, lits, 
+        canapés ou bureaux et éteindre la station de base pendant la nuit. Plus simple: 
+        la nouvelle norme ECO-DECT (or ECO+) corrige ce problème et ne transmet que lorsque 
+        l\'on communique. 
+        </item>
+        <item>
+        Les routeurs WiFi génèrent des champs électromagnétiques haute-fréquence (2.4 – 5.7 GHz). 
+        Afin de signaler leur présence aux appareils pouvant se connecter au WiFi ils transmettent 
+        un signal plusieurs fois par seconde, même lorsqu\'ils ne sont pas utilisés. Il faut donc 
+        éviter de les placer à proximité des chambres. Il est également judicieux d\'éteindre son 
+        routeur pendant la nuit puisqu\'il ne sert à rien. Un bon moyen de minimiser l\'exposition 
+        (et les côuts!) et de partager un seul routeur pour plusieurs voisins.
+        </item>
+        <item>
+        Les téléphones mobiles génèrent des champs électromagnétiques haute-fréquence 
+        (GSM: 1800 MHz, 3G: 2100 MHz). Comparée aux autres appareils, le mobile est 
+        puissant étant donné que l\'antenne peut se situer à quelque kilomètres (p.ex. ~10 
+        fois plus puissant que le DECT). De plus, sans kit mains libres, on le tient à 
+        quelques millimètres de notre tête. Finalement, on sait encore peu de choses sur 
+        les effets autres qu\'un réchauffement. Par sécurité il faut donc veillez à respecter 
+        quelques règles: 1) Choisir un mobile dont le SAR (TAS/DAS en français) sont faibles. 
+        Cela veut dire que la puissance absorbé par notre corps est plus faible. 2) Utiliser un 
+        maximum le kit mains libres (vous avez constaté la différence importante!). 3) Eviter de 
+        téléphoner en voiture ou en train: votre téléphone transmet à pleine puissance à cause de 
+        la structure métallique de votre voiture/train et du changement incessant d\'antenne. 
+        4) Utiliser tant que possible le SMS dont la transmission dure une à deux secondes. 
+        5) Mettez votre téléphone en mode « avion » lorsque vous ne l\'utilisez pas (p.ex. la nuit) 
+        car il communique régulièrement avec l\'antenne. De même dans le train ou la voiture où le 
+        mobile doit communiquer en permanence afin de changer d\'antenne. 
+        </item>
     </string-array>
+    
     <string-array name="frequencies_array">
-        <item>Basses-fréquences (>30 kHz)</item>
-        <item>Hautes-fréquences (>30 kHz)</item>
+        <item>Basses-fréquences (&lt;30 kHz)</item>
+        <item>Hautes-fréquences (&gt;30 kHz)</item>
     </string-array>
+    
     <string-array name="tutorials">
         <item>Champs électromagnétiques et électrosmog</item>
         <item>Fréquences électromagnétiques</item>
         <item>Risques et effets</item>
         <item>Prévention</item>
     </string-array>
+
 </resources>

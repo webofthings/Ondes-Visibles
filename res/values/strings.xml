@@ -25,7 +25,8 @@
     <string name="exp_dect">DECT Bla bla</string>
     <string name="exp_mobile">Mobile Bla bla</string>
     <string name="exp_wifi_hf">Wifi Bla bla</string>
-    <string name="no_device_selected">Veuillez sélectionner un appareil pour obtenir les instructions.</string>
+    <string name="no_device_selected_lf">Ce mode vous permet d\'expérimenter librement avec la sonde basse-fréquence.</string>
+    <string name="no_device_selected_hf">Ce mode vous permet d\'expérimenter librement avec la sonde haute-fréquence.</string>
     <string name="exp_driller">Driller Bla bla</string>
     <string name="exp_alarm">Alarm Clock Bla bla</string>
     <string name="exp_wifi_lf">WiFi Bla bla</string>

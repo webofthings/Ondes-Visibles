@@ -11,6 +11,9 @@
 // Setting the sensor pins.
 int lfAnalogIn = 0;
 int hfAnalogIn = 5;
+int noiseLf = 4;
+int noiseHf = 40;
+int currentNoise;
 
 // Ack message to send to Android once a message has been received
 // e.g., the sensor activation message.
@@ -43,11 +46,13 @@ void adbEventHandler(Connection * connection, adb_eventType event, uint16_t leng
     if (data[0] == 'l')  {
         if (debug) Serial.println("Switching to LF!");
         currentSensor = lfAnalogIn;
+        currentNoise = noiseLf;
         sense = true;
     }
     if (data[0] == 'h') {
         if (debug) Serial.println("Switching to HF!");
         currentSensor = hfAnalogIn;
+        currentNoise = noiseHf;
         sense = true;
     }
     if (data[0] == 's') {
@@ -63,6 +68,7 @@ void setup()
   Serial.begin(57600);
 
   currentSensor = lfAnalogIn;
+  currentNoise = noiseLf;
   
   // Note start time
   lastTime = millis();  
@@ -79,7 +85,7 @@ float getVoltageForValue(int value) {
   return value * 0.0049;
 }
 
-int getSensorValue(int sensorPin) {
+int getAvgSensorValue(int sensorPin) {
    int val = 0;
    int array1[samples];
    unsigned long averaging = 0;
@@ -117,41 +123,45 @@ int getHFSensorValue(int sensorPin) {
     
     msStop = micros();
     analogValue /= numSamples;  
-    //analogValue = constrain(analogValue, 0, 100); 
     return analogValue;
 }
 
 
-int getSimpleSensorValue(int sensorPin) {
+// Gets the peak observation for a round of samples.
+int getPeakSensorValue(int sensorPin) {
      int analogValue = 0;
-     // Averaging the value
      for(int i = 0; i < samples; i++){   
        int analogIn = analogRead(sensorPin);
        if (analogIn > analogValue) analogValue=analogIn;
        delayMicroseconds(100);
      }
      return analogValue;
+   }
+
+// Corrects the value according to the observed noise for each sensor
+int cancelNoise(int value) {
+    if(value - currentNoise >= 0) {
+      return value - currentNoise;
+    } else {
+      return value;
+    }
 }
 
 void loop()
 {
       if ((millis() - lastTime) > 100 && sense)
       {
-  //      uint16_t data = getSensorValue(currentSensor);
-  //      uint16_t data = analogRead(0);
-        int data = analogRead(currentSensor);
-  //      int data = getSensorValue(currentSensor);
-        connection->write(2, (uint8_t*)&data);
-        if (debug) Serial.println(data);
-        lastTime = millis();
-      
-//      if (ackToAndroid) {
-//         connection->write(2, (uint8_t*)ack);
-//         ackToAndroid = false;
-//       }
-     }
-     
+        //int data = analogRead(currentSensor);
+        int value = getPeakSensorValue(currentSensor);
+        value = cancelNoise(value);
 
-      // Poll the ADB subsystem
+        if (debug) Serial.println(getVoltageForValue(value));
+        
+        connection->write(2, (uint8_t*)&value);
+        if (debug) Serial.println(value);
+        
+        lastTime = millis();
+      }
+      // Poll the link to Android
       ADB::poll();
 }

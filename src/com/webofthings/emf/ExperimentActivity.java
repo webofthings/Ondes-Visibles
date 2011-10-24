@@ -19,24 +19,28 @@ public class ExperimentActivity extends Activity {
 	private void loadExperimentData() {
 		currentExperiment = new ExperimentInfo();
 		int deviceId = params.getDeviceId();
-		if (deviceId != -1) {
-			if (params.isLF()) {
-				currentExperiment.setInstructions(getResources()
-						.getStringArray(R.array.exp_lf_instructions)[deviceId]);
-				currentExperiment.setConclusion(getResources().getStringArray(
-						R.array.exp_lf_conclusions)[deviceId]);
+		String instructions;
+		String conclusions;
+		
+		if (params.isLF()) {
+			if (params.isDevice()) {
+				instructions = getResources().getStringArray(R.array.exp_lf_instructions)[deviceId];
+				conclusions = getResources().getStringArray(R.array.exp_lf_conclusions)[deviceId];
 			} else {
-				currentExperiment.setInstructions(getResources()
-						.getStringArray(R.array.exp_hf_instructions)[deviceId]);
-				currentExperiment.setConclusion(getResources().getStringArray(
-						R.array.exp_hf_conclusions)[deviceId]);
+				instructions = getResources().getString(R.string.no_device_selected_lf);
+				conclusions = instructions;
 			}
 		} else {
-			currentExperiment.setInstructions(getResources().getString(
-					R.string.no_device_selected));
-			currentExperiment.setConclusion(getResources().getString(
-					R.string.no_device_selected));
+			if (params.isDevice()) {
+				instructions = getResources().getStringArray(R.array.exp_hf_instructions)[deviceId];
+				conclusions = getResources().getStringArray(R.array.exp_hf_conclusions)[deviceId];
+			} else {
+				instructions = getResources().getString(R.string.no_device_selected_hf);
+				conclusions = instructions;
+			}
 		}
+		currentExperiment.setInstructions(instructions);
+		currentExperiment.setConclusion(conclusions);
 	}
 
 	protected void onResume() {

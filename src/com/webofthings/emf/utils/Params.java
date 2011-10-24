@@ -66,18 +66,22 @@ public class Params
     }
     return -1;
   }
+  
+  public boolean isDevice() {
+	  return isDevice(params.getInt("deviceId"));
+  }
 
   private boolean isDevice(int id)
-  {
+  { 
+	if (id < 0) return false;
     if (isLF()) {
-      if (id >= numberOfLFDevices) {
+      if ((id+1) >= numberOfLFDevices) {
         return false;
       }
     }
-    else if (id >= numberOfHFDevices) {
+    else if ((id+1) >= numberOfHFDevices) {
       return false;
     }
-
     return true;
   }
 

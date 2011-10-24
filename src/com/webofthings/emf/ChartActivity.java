@@ -251,6 +251,7 @@ public class ChartActivity extends Activity
     {
       vibrateMnu.setIcon(R.drawable.vibrator_on);
       vibratorActive = false;
+      vibrator.cancel();
     }
     else {
         vibrateMnu.setIcon(R.drawable.vibrator_off);
