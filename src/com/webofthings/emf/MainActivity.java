@@ -52,7 +52,7 @@ public class MainActivity extends Activity
   }
 
   private void showAbout() {
-    Toast.makeText(this, "TODO!", 1).show();
+	  startActivity(new Intent(this, AboutActivity.class));
   }
 
   private void invokeSettings() {

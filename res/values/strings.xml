@@ -64,4 +64,17 @@
     <string name="tut_4_c_text">"Distance ! Comme les champs électromagnétiques diminuent fortement avec la distance, simplement s'éloigner des appareils et prises est une bonne mesure. Dans le cas du mobile, l'utilisation d'un kit main libres permet d'éloigner sa tête du téléphone et minimise donc l'exposition directe !"</string>
     <string name="tut_4_d_text">Pas dans mon lit ! Puisque nous y dormons, vider notre chambre à coucher des champs électromagnétiques semble une bonne idée. Evitons la TV, le router WiFi, le téléphone sans fils dans la chambre. Le mobile en mode vol pendant la nuit, le réveil électrique et les cables pas à 2 m du lit au minimum.</string>
     <string name="tut_4_e_text">"Maintenant que nous comprenons la base des champs électromagnétiques et leurs risques, nous sommes prêts pour l'expérimentation. A travers ces experiences des mesures de prévention plus concrètes seront données pour chaque appareil."</string>
+
+	<string name="about_activity_title">Crédits et remerciements</string>
+	<string name="about">
+	Ondes Visible! Version 1.0\n\n
+	Elaboration du matériel:\n
+	Jean-Pierre Guinard, Dominique Guinard\n
+	Dévelopment logiciel:\n
+	Dominique Guinard\n
+	Concept:\n
+	Robert Unteregger, Dominique Guinard\n
+	Soutient: ETH Zurich\n\n
+	(c) Cudrefin02 www.cudrefin02.ch\n\n
+	</string>
 </resources>
