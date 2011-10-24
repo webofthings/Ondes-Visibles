@@ -1,13 +1,31 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    
+ 
+ <!-- Experiments: LF -->
+      
     <string-array name="lf_devices_array">
         <item>Prise électrique</item>
         <item>Perceuse</item>
         <item>Eclairages</item>
         <item>Appareils à transformateurs</item>
         <item>Autre...</item>
-    </string-array>    
+    </string-array>   
+    
+    <string-array name="exp_lf_more_info_1">
+    	<item>4</item>
+    	<item>8</item>
+    	<item>3</item>
+    	<item>4</item>
+    	<item>2</item>
+    </string-array>
+    
+    <string-array name="exp_lf_more_info_2">
+    	<item>32</item>
+    	<item>31</item>
+    	<item>33</item>
+    	<item>32</item>    	
+    	<item>28</item>
+    </string-array>  
     
     <string-array name="exp_lf_instructions">
         <item>
@@ -76,7 +94,8 @@
     	l\'on passe beaucoup de temps (p.ex. la chambre à coucher).
     	</item>
     </string-array>
-    
+   
+<!-- Experiments: HF -->     
         
    <string-array name="hf_devices_array">
         <item>Téléphone sans fils (DECT)</item>
@@ -84,6 +103,20 @@
         <item>Téléphone mobile</item>
         <item>Autre...</item>
     </string-array>
+    
+    <string-array name="exp_hf_more_info_1">
+    	<item>5</item>
+    	<item>7</item>
+    	<item>7</item>
+    	<item>2</item>
+    </string-array>
+    
+    <string-array name="exp_hf_more_info_2">
+    	<item>53</item>
+    	<item>54</item>
+    	<item>39-45</item>
+    	<item>52-55</item>
+    </string-array>  
     
     <string-array name="exp_hf_instructions">
         <item>
@@ -114,8 +147,8 @@
         </item>
         
     </string-array>
-    
-    
+
+   
     <string-array name="exp_hf_conclusions">
         <item>
         Les téléphones sans fils génèrent des champs haute-fréquence (1880-1900 MHz). 
@@ -160,11 +193,16 @@
         <item>Hautes-fréquences (&gt;30 kHz)</item>
     </string-array>
     
+<!-- Tutorials -->
+    
     <string-array name="tutorials">
         <item>Champs électromagnétiques et électrosmog</item>
         <item>Fréquences électromagnétiques</item>
         <item>Risques et effets</item>
         <item>Prévention</item>
     </string-array>
+    
+	<string-array name="tutorial_fields_and_smog">
+	</string-array>
 
 </resources>

@@ -1,10 +1,14 @@
-package com.webofthings.emf;
+package com.webofthings.emf.experiments;
 
 import android.app.Activity;
 import android.os.Bundle;
 import android.widget.TextView;
 
-import com.webofthings.emf.experiments.ExperimentInfo;
+import com.webofthings.emf.R;
+import com.webofthings.emf.R.array;
+import com.webofthings.emf.R.id;
+import com.webofthings.emf.R.layout;
+import com.webofthings.emf.R.string;
 import com.webofthings.emf.utils.Params;
 
 public class ExperimentActivity extends Activity {

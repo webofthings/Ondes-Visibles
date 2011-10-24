@@ -13,18 +13,20 @@ public class FrequenciesTutorialActivity extends AbstractTutorialActivity
   {
     if (infoDataList == null) {
       infoDataList = new LinkedList<InfoData>();
+      String moreInfo1 = getString(R.string.tut_2_more_info_1);
+      String moreInfo2 = getString(R.string.tut_2_more_info_2);
       infoDataList.add(
         new InfoData(R.string.tut_2_a_text, 
-        		R.drawable.tut_2_a));
+        		R.drawable.tut_2_a, moreInfo1, moreInfo2));
       infoDataList.add(
         new InfoData(R.string.tut_2_b_text, 
-        		R.drawable.tut_2_b));
+        		R.drawable.tut_2_b, moreInfo1, moreInfo2));
       infoDataList.add(
         new InfoData(R.string.tut_2_c_text, 
-        		R.drawable.tut_2_c));
+        		R.drawable.tut_2_c, moreInfo1, moreInfo2));
       infoDataList.add(
         new InfoData(R.string.tut_2_d_text, 
-        		R.drawable.tut_2_d));
+        		R.drawable.tut_2_d, moreInfo1, moreInfo2));
     }
     return infoDataList;
   }

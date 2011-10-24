@@ -13,6 +13,7 @@
     <string name="experiment_activity_title_conclusion">Conclusions</string>
     <string name="show_experiment">instructions</string>
     <string name="show_experiment_conclusion">conclusions</string>
+    <string name="show_more_info">+ d\'info</string>
     <string name="home">home</string>
     <string name="start_experiment">start</string>
     <string name="stop_experiment">stop</string>
@@ -22,9 +23,6 @@
     <string name="hf_human_readable">hautes fréquences</string>
     <string name="field">Champ électromagnétique</string>
     <string name="activate_sensor">Activation du capteur</string>
-    <string name="exp_dect">DECT Bla bla</string>
-    <string name="exp_mobile">Mobile Bla bla</string>
-    <string name="exp_wifi_hf">Wifi Bla bla</string>
     <string name="no_device_selected_lf">Ce mode vous permet d\'expérimenter librement avec la sonde basse-fréquence.</string>
     <string name="no_device_selected_hf">Ce mode vous permet d\'expérimenter librement avec la sonde haute-fréquence.</string>
     <string name="exp_driller">Driller Bla bla</string>
@@ -34,6 +32,12 @@
     <string name="toggle_debug">Mode simulation</string>
     <string name="simulation_on">Simulation activée!</string>
     <string name="simulation_off">Simulation désactivée!</string>
+    <string name="more_info_title">Dans les brochures...</string>
+    <string name="more_info_description">Pour plus d\'information rendez-vous à la page</string>
+    <string name="more_info_description_device">Pour plus d\'information sur ces appareils, rendez-vous à la page</string>
+    <string name="more_info_flyer_1">de la brochure 1 (l\'électrosmog au quotidien) et</string>
+    <string name="more_info_flyer_2">de la brochure 2 (l\'électrosmog dans l\'environment).</string>
+    
     
     <string name="tut_1_title">Electrosmog</string>
     <string name="tut_1_a_text">"Afin de mieux comprendre ce qu'est un champs électromagnétique regardons ce qui se passe autour d'un appareil comme un téléviseur."</string>
@@ -44,12 +48,16 @@
  1) La force des champs est proportionnelle à la tension (volts) et au courant appliqué (ampères). Donc plus la puissance d'émission est faible, plus le champs et faible (plus le temps est sombre :-)).
  2) Les champs faiblissent avec la distance. Donc plus l 'on s'éloigne de l'appareil, plus le champs est faible. A nouveau, un peu comme le soleil, plus on s'en éloigne moins il est chaud/lumineux."</string>
     <string name="tut_1_f_text">"Pour terminer, voici le champs électromagnétique généré par un sèche-cheveux. Ce qu'on appelle électrosmog sont les champs générés par les appareils que nous côtoyons dans notre vie quotidienne. Nos appareils (TV, sèche-cheveux, borne WiFi, prises, téléphones mobiles, etc.) mais aussi les appareils de l'infrastructure (antennes, lignes haute-tension, etc.)."</string>
+    <string name="tut_1_more_info_1">2</string>
+ 	<string name="tut_1_more_info_2">4</string>
     
     <string name="tut_2_title">Fréquences</string>
     <string name="tut_2_a_text">"Les champs électromagnétiques changent de phase (+/-) et d'intensité de force de façon régulière. On dit qu'ils oscillent à une certaine fréquence. La mesure de cette fréquences est le Herz. 1 Hz représente un cyle ou une oscillation par seconde. On divise les champs en deux catégories : les champs basses-fréquences et les champs haute-fréquences en fonction du temps qu'ils mettent à osciller."</string>
     <string name="tut_2_b_text">"Les champs basses-fréquences sont les champs dont le cycle se situe en dessous de 30'000 oscillations par seconde. Dans ce domaine on trouve les chemins de fers, le réseau électrique (prises, pylônes, etc. beaucoup de nos appareils électriques."</string>
     <string name="tut_2_c_text">"Les champs haute-fréquences se situent au dessus de 30'000 oscillations par seconde. Les hautes-fréquences sont utilisés surtout afin de transporter des données (que l'on encode au travers des cycles). Par exemple pour la transmission TV/Radio, pour nos téléphones mobiles (Bluetooth 2.4GHz, GSM 1.8GHz, 3G 2.4GHz, etc.), pour le WiFi (2.4 GHz) pour les fours à micro-ondes (2.4 GHz). Autour de ces fréquences, les champs électriques et magnétiques deviennent liés et \"voyagent\" ensemble. C'est pourquoi l'on parle de champs électromagnétiques."</string>
     <string name="tut_2_d_text">"Au delà des hautes-fréquences se situent des ondes qui oscillent extrêmement rapidement, telles que la lumière visible. Au delà de la lumière visible on trouve des ondes ionisantes. Cela veut dire qu'elles peuvent modifier les atomes et les molécules. Par exemple les rayons-X ou les rayons gamma issus de la radioactivité peuvent modifier la matière ce qui les rend dangereux."</string>
+    <string name="tut_2_more_info_1">2</string>
+ 	<string name="tut_2_more_info_2">4-5</string>
     
     <string name="tut_3_title">Risques et effets</string>
     <string name="tut_3_a_text">Le corps humain est un conducteur ce qui veut dire que les champs électriques et magnétiques peuvent générer des courants dans le corps humain.</string>
@@ -57,6 +65,8 @@
     <string name="tut_3_c_text">"Pour des intensités plus faibles des champs basses-fréquences la question est plus complexe. Les avis divergent mais des des expériences ont trouvés certains effets lorsque l'on est exposé très longtemps ou en permanence à ces champs (par exemple en habitant tout près d'une ligne à haute tension). Parmi ces effets les scientifiques ont observé des modifications du comportement (nervosité) et des effets sur notre production d'hormones. On a également observé un léger accroissement du risque de leucémie chez les enfants. Mais les scientifiques manquent encore de certitude dans le domaine !"</string>
     <string name="tut_3_d_text">"Pour les champs haute-fréquences le seul effet prouvé est un réchauffement. Ceci peut être observé lorsque l'on utilise un four micro-ondes puisque l'on utilise des ondes à 2.4 GHz pour réchauffer nos aliments. Cette fréquence est par exemple similaire à celle utilisée pour les téléphones mobiles modernes mais un téléphone mobile a une puissance environ 500 fois plus faible (et il n'est pas dans une cage en métal). Après 30 minutes d'utilisation d'un téléphone mobile directement sur l'oreille on constate un réchauffement d'environ 0.4 degrés. Ce qui pourrait expliquer de légers maux de tête par exemple. Mais là aussi des valeurs limites sont mises en place pour nous protéger des effets de ce réchauffement."</string>
     <string name="tut_3_e_text">"Au delà du réchauffement on ne connaît pas d'autres effets des hautes-fréquences que l'on rencontre dans notre vie quotidienne. Certains chercheurs pensent qu'il y a d'autres effets tels qu'une influence sur le sommeil, des modifications des cellules et un risque accru de cancers. Mais d'autres études contredisent systématiquement ces résultats. Cela montre que l'on se trouve ici à la limite de nos connaissances scientifiques. On ne parvient pas à prouver d'autres effets mais on ne parvient pas non plus à prouver leur absence."</string>
+    <string name="tut_3_more_info_1">13-14</string>
+ 	<string name="tut_3_more_info_2">7-13</string>
     
     <string name="tut_4_title">Prévention</string>
     <string name="tut_4_a_text">"Comme l'on ne maîtrise pas encore tous les risques liés aux champs électromagnétiques une bonne approche est d'éviter ce qui est évitable ! Un certain nombre de mesures simples nous permettent de réduire notre exposition au minimum. Cela permet de réduire le risque de façon significative puisque la plupart des scientifiques s'accordent sur le fait que la durée d'exposition importe beaucoup."</string>
@@ -64,17 +74,13 @@
     <string name="tut_4_c_text">"Distance ! Comme les champs électromagnétiques diminuent fortement avec la distance, simplement s'éloigner des appareils et prises est une bonne mesure. Dans le cas du mobile, l'utilisation d'un kit main libres permet d'éloigner sa tête du téléphone et minimise donc l'exposition directe !"</string>
     <string name="tut_4_d_text">Pas dans mon lit ! Puisque nous y dormons, vider notre chambre à coucher des champs électromagnétiques semble une bonne idée. Evitons la TV, le router WiFi, le téléphone sans fils dans la chambre. Le mobile en mode vol pendant la nuit, le réveil électrique et les cables pas à 2 m du lit au minimum.</string>
     <string name="tut_4_e_text">"Maintenant que nous comprenons la base des champs électromagnétiques et leurs risques, nous sommes prêts pour l'expérimentation. A travers ces experiences des mesures de prévention plus concrètes seront données pour chaque appareil."</string>
+	<string name="tut_4_more_info_1">15</string>
+ 	<string name="tut_4_more_info_2">29-30</string>
 
 	<string name="about_activity_title">Crédits et remerciements</string>
 	<string name="about">
-	Ondes Visible! Version 1.0\n\n
-	Elaboration du matériel:\n
-	Jean-Pierre Guinard, Dominique Guinard\n
-	Dévelopment logiciel:\n
-	Dominique Guinard\n
-	Concept:\n
-	Robert Unteregger, Dominique Guinard\n
-	Soutient: ETH Zurich\n\n
+	Ondes Visible! Version 1.0\n\nElaboration du matériel: Jean-Pierre Guinard, Dominique Guinard\n
+	Dévelopment logiciel: Dominique Guinard\nConcept: Robert Unteregger, Dominique Guinard\nSoutient: ETH Zurich\n\n
 	(c) Cudrefin02 www.cudrefin02.ch\n\n
 	</string>
 </resources>

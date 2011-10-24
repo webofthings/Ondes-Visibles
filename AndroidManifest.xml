@@ -62,7 +62,7 @@
                 <category android:name="android.intent.category.DEFAULT" />
             </intent-filter>
         </activity>
-        <activity android:theme="@android:style/Theme.Dialog" android:label="@string/experiment_activity_title_instructions" android:name=".ExperimentActivity">
+        <activity android:theme="@android:style/Theme.Dialog" android:label="@string/experiment_activity_title_instructions" android:name=".experiments.ExperimentActivity">
             <intent-filter>
                 <action android:name="com.webofthings.emf.EXPERIMENTACTIVITY" />
                 <category android:name="android.intent.category.DEFAULT" />
@@ -71,6 +71,18 @@
         <activity android:theme="@android:style/Theme.Dialog" android:label="@string/about_activity_title" android:name=".AboutActivity">
             <intent-filter>
                 <action android:name="com.webofthings.emf.ABOUTACTIVITY" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity android:theme="@android:style/Theme.Dialog" android:label="@string/more_info_title" android:name=".MoreInfoActivity">
+            <intent-filter>
+                <action android:name="com.webofthings.emf.MOREINFOACTIVITY" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity android:theme="@android:style/Theme.Dialog" android:label="@string/more_info_title" android:name=".MoreInfoDeviceActivity">
+            <intent-filter>
+                <action android:name="com.webofthings.emf.MOREINFODEVICEACTIVITY" />
                 <category android:name="android.intent.category.DEFAULT" />
             </intent-filter>
         </activity>

@@ -1,5 +1,6 @@
 package com.webofthings.emf.tutorials;
 
+import java.util.Currency;
 import java.util.LinkedList;
 import java.util.ListIterator;
 
@@ -12,13 +13,16 @@ import android.widget.ImageView;
 import android.widget.LinearLayout;
 import android.widget.TextView;
 
+import com.webofthings.emf.MoreInfoActivity;
 import com.webofthings.emf.R;
 import com.webofthings.emf.utils.InfoData;
+import com.webofthings.emf.utils.Params;
 
 public abstract class AbstractTutorialActivity extends Activity
 {
   private ListIterator<InfoData> dataIterator;
-
+  private InfoData currentInfo;
+  
   protected abstract LinkedList<InfoData> getInfoData();
 
   protected void onCreate(Bundle savedInstanceState)
@@ -27,7 +31,6 @@ public abstract class AbstractTutorialActivity extends Activity
     setContentView(R.layout.info);
 
     dataIterator = getInfoData().listIterator();
-
     showNextInfo();
 
     ImageButton nextBtn = (ImageButton)findViewById(R.id.next_button);
@@ -38,6 +41,7 @@ public abstract class AbstractTutorialActivity extends Activity
         showNextInfo();
       }
     });
+    
     ImageButton prevBtn = (ImageButton)findViewById(R.id.previous_button);
     prevBtn.setOnClickListener(new View.OnClickListener()
     {
@@ -46,6 +50,16 @@ public abstract class AbstractTutorialActivity extends Activity
         showPreviousInfo();
       }
     });
+    
+    ImageButton moreBtn = (ImageButton)findViewById(R.id.more_info_button);
+    moreBtn.setOnClickListener(new View.OnClickListener()
+    {
+      public void onClick(View v)
+      {
+        showMoreInfo();
+      }
+    });
+    
     ImageButton homeBtn = (ImageButton)findViewById(R.id.home_button);
     homeBtn.setOnClickListener(new View.OnClickListener()
     {
@@ -58,7 +72,6 @@ public abstract class AbstractTutorialActivity extends Activity
 
   protected void showNextInfo()
   {
-    InfoData currentInfo;
     if (dataIterator.hasNext()) {
       currentInfo = (InfoData)dataIterator.next();
     } else {
@@ -71,15 +84,20 @@ public abstract class AbstractTutorialActivity extends Activity
 
   protected void showPreviousInfo()
   {
-    InfoData currentInfo;
     if (dataIterator.hasPrevious()) {
       currentInfo = (InfoData)dataIterator.previous();
     } else {
       currentInfo = (InfoData)getInfoData().getLast();
       dataIterator = getInfoData().listIterator(getInfoData().size() - 1);
     }
-
     doShowInfo(currentInfo);
+  }
+  
+  protected void showMoreInfo() {
+	  Intent intent = new Intent(this, MoreInfoActivity.class);
+	  intent.putExtras(Params.prepareMoreInfoExtras(currentInfo.getMoreInfo()[0],
+			  currentInfo.getMoreInfo()[1]));
+	  startActivity(intent);
   }
 
   protected void doShowInfo(InfoData currentInfo) {

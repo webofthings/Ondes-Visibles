@@ -19,7 +19,7 @@ public class AboutActivity extends Activity {
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
-		setContentView(R.layout.experiment_details);
+		setContentView(R.layout.about);
 	}
 	
 	@Override

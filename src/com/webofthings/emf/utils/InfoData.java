@@ -4,11 +4,15 @@ public class InfoData
 {
   private int textId;
   private int imageId;
+  private String moreInfo[];
 
-  public InfoData(int textId, int imageId)
+  public InfoData(int textId, int imageId, String moreInfo1, String moreInfo2)
   {
     this.textId = textId;
     this.imageId = imageId;
+    moreInfo = new String[2];
+    moreInfo[0] = moreInfo1;
+    moreInfo[1] = moreInfo2;
   }
 
   public int getTextId()
@@ -29,5 +33,14 @@ public class InfoData
   public void setImageId(int imageId)
   {
     this.imageId = imageId;
+  }
+  
+  public String[] getMoreInfo() {
+	  return this.moreInfo;
+  }
+  
+  public void setMoreInfo1(String moreInfo1, String moreInfo2) {
+	  moreInfo[0] = moreInfo1;
+	  moreInfo[1] = moreInfo2;
   }
 }
