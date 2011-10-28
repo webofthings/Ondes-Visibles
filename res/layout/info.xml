@@ -2,10 +2,10 @@
 <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
   xmlns:android="http://schemas.android.com/apk/res/android">
     <ScrollView android:layout_width="fill_parent" android:layout_height="wrap_content" android:id="@+id/scrollView1">
-        <LinearLayout android:orientation="vertical" android:id="@id/scrollView1" android:layout_width="fill_parent" android:layout_height="fill_parent">
-            <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/icon" android:id="@+id/info_image"/>
+        <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:id="@id/scrollView1" android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <ImageView android:layout_width="wrap_content" android:gravity="center_horizontal" android:layout_height="wrap_content" android:src="@drawable/icon" android:id="@+id/info_image"/>
             <TextView android:textAppearance="?android:textAppearanceMedium" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="TextView" android:id="@+id/info_body"/>
-            <LinearLayout android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_centerInParent="true" android:layout_centerHorizontal="true" android:layout_centerVertical="true" android:id="@+id/linear_layout_buttons">
+            <LinearLayout android:gravity="center_horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_centerInParent="true" android:layout_centerHorizontal="true" android:layout_centerVertical="true" android:id="@+id/linear_layout_buttons">
                 <ImageButton android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/back" android:id="@+id/previous_button"/>
                 <ImageButton android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/next" android:id="@+id/next_button"/>
                 <ImageButton android:id="@+id/more_info_button" android:layout_height="wrap_content" android:layout_width="wrap_content" android:src="@drawable/info"></ImageButton>

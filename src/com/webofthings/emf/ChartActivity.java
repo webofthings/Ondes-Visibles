@@ -27,10 +27,9 @@ import com.webofthings.emf.utils.Params;
 
 public class ChartActivity extends Activity {
 	private static final double INITIAL_X_MAX = 50.0D;
-	private static final double INITIAL_Y_MAX = 40.0D;
+	private static final double INITIAL_Y_MAX = 10.0D;
 	private static final int DATA_SET_MAX_SIZE = 500;
 
-	// private static final int NOISE = 40;
 	private GraphicalView mChartView;
 	private ArduinoEMFAppLink arduino;
 	private Handler callBack;
@@ -46,6 +45,7 @@ public class ChartActivity extends Activity {
 	private MenuItem vibrateMnu;
 	private boolean sensingActive;
 	private boolean vibratorActive;
+	private DataPersistantLogger dataLog;
 
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
@@ -53,6 +53,8 @@ public class ChartActivity extends Activity {
 
 		vibrator = (Vibrator) getSystemService("vibrator");
 		vibratorActive = true;
+
+		dataLog = new DataPersistantLogger();
 
 		params = new Params(getIntent(), this);
 		showIntroduction();
@@ -88,6 +90,14 @@ public class ChartActivity extends Activity {
 				if (mChartView != null) {
 					ChartActivity.this.refreshChart(y);
 					ChartActivity.this.hapticFeedback(y);
+
+					if (Params.LOG_MODE) {
+						if (params.isLF()) {
+							dataLog.storeLFDataDetailed(y);
+						} else {
+							dataLog.storeLFDataDetailed(y);
+						}
+					}
 				}
 			}
 		};
@@ -101,7 +111,11 @@ public class ChartActivity extends Activity {
 
 	private void hapticFeedback(double value) {
 		if (vibratorActive)
-			vibrator.vibrate((long) value * 10);
+			if (params.isLF()) {
+				vibrator.vibrate((long) value * 10);
+			} else {
+				vibrator.vibrate((long) value / 5);
+			}
 	}
 
 	protected void onPause() {
@@ -209,12 +223,11 @@ public class ChartActivity extends Activity {
 				params.getDeviceId(), true));
 		startActivity(intent);
 	}
-	
 
 	private void showMoreInfo() {
 		Intent intent = new Intent(this, MoreInfoDeviceActivity.class);
-		  intent.putExtras(Params.prepareMoreInfoExtras(params.getMoreInfo()));
-		  startActivity(intent);	
+		intent.putExtras(Params.prepareMoreInfoExtras(params.getMoreInfo()));
+		startActivity(intent);
 	}
 
 	private void startSensing() {

@@ -3,7 +3,8 @@
   xmlns:android="http://schemas.android.com/apk/res/android">
     <ScrollView android:layout_height="wrap_content" android:layout_width="fill_parent" android:id="@+id/scrollView1">
         <LinearLayout android:id="@+id/linearLayout1" android:layout_width="fill_parent" android:layout_height="fill_parent">
-        <TextView android:layout_width="fill_parent"  android:layout_height="fill_parent" android:id="@+id/experiment_details_textview"/>
+        <TextView android:layout_width="fill_parent"  android:gravity="center_horizontal"
+        android:layout_height="fill_parent" android:id="@+id/experiment_details_textview"/>
         </LinearLayout>
     </ScrollView>
     

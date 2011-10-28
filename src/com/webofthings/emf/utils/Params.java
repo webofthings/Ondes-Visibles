@@ -14,6 +14,7 @@ public class Params {
 	public static final String MORE_INFO_1_KEY = "1";
 	public static final String MORE_INFO_2_KEY = "2";
 	public static boolean SIMULATION_MODE = false;
+	public static boolean LOG_MODE = false;
 	private static final String FREQUENCY_KEY = "frequency";
 	private static final String DEVICE_KEY = "deviceId";
 	private static final String CONCLUSION_KEY = "isConclusion";

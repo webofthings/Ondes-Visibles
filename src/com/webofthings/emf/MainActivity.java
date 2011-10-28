@@ -67,6 +67,9 @@ public class MainActivity extends Activity
     super.onCreateOptionsMenu(menu);
     MenuItem debug = menu.add(0, 0, 0, getString(R.string.toggle_debug));
     debug.setIcon(R.drawable.white_flag);
+    
+    MenuItem log = menu.add(0, 1, 0, getString(R.string.toggle_log));
+    log.setIcon(R.drawable.log);
     return true;
   }
 
@@ -76,13 +79,21 @@ public class MainActivity extends Activity
     case 0:
       if (Params.SIMULATION_MODE) {
         Params.SIMULATION_MODE = false;
-        Toast.makeText(this, getString(R.string.simulation_off), Toast.LENGTH_LONG).show();
+        Toast.makeText(this, getString(R.string.simulation_off), Toast.LENGTH_SHORT).show();
       } else {
         Params.SIMULATION_MODE = true;
-        Toast.makeText(this, getString(R.string.simulation_on), Toast.LENGTH_LONG).show();
+        Toast.makeText(this, getString(R.string.simulation_on), Toast.LENGTH_SHORT).show();
       }
-
       return true;
+    case 1:
+        if (Params.LOG_MODE) {
+          Params.LOG_MODE = false;
+          Toast.makeText(this, getString(R.string.log_off), Toast.LENGTH_LONG).show();
+        } else {
+          Params.LOG_MODE = true;
+          Toast.makeText(this, getString(R.string.log_on), Toast.LENGTH_LONG).show();
+        }
+        return true;
     }
     return false;
   }

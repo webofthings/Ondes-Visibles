@@ -3,7 +3,7 @@
   xmlns:android="http://schemas.android.com/apk/res/android" android:id="@+id/linear_layout_main">
 <TextView android:textAppearance="?android:textAppearanceLarge" android:layout_gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/app_name" android:id="@+id/main_title_view"/>
     <LinearLayout android:layout_gravity="center" android:id="@id/scrollView1" android:layout_width="wrap_content" android:layout_height="wrap_content">
-        <ImageButton android:layout_gravity="center_horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/intro2" android:text="@string/button_intro" android:id="@+id/button_intro"/>
+        <ImageButton android:layout_gravity="center_horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/intro2" android:id="@+id/button_intro"/>
     	<ImageButton android:layout_gravity="center_horizontal" android:layout_width="wrap_content" android:src="@drawable/exp2" android:id="@+id/button_experiments" android:layout_height="wrap_content"></ImageButton>
     </LinearLayout>
     <LinearLayout android:layout_gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:id="@+id/linear_layout_main_btns_2">

@@ -103,7 +103,7 @@ public abstract class AbstractTutorialActivity extends Activity
   protected void doShowInfo(InfoData currentInfo) {
     TextView bodyText = (TextView)
       findViewById(R.id.info_body);
-    bodyText.setText(getString(currentInfo.getTextId()));
+    bodyText.setText(getString(currentInfo.getTextId()) + "\n");
 
     ImageView image = (ImageView)findViewById(R.id.info_image);
     image.setImageDrawable(getResources().getDrawable(currentInfo.getImageId()));

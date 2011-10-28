@@ -31,18 +31,18 @@
         <item>
         Les prise électriques émettent des champs magnétiques. Allumez le bouton de la 
         prise-multiple et testez le champ tout près avec le capteur (ne mettez pas l\'antenne 
-        dans le trou, ceci détruirait le capteur!). Le champs capté est un champs type magnétique à 
+        dans le trou, ceci détruirait le capteur!). Le champ capté est de type magnétique à 
         basse-fréquence (50 Hz).\n
         - Reculez maintenant le capteur de quelques centimètres.\n
         - Au bout de quelle distance le capteur ne détecte-t-il plus rien?\n
-        - Que se passe-t-il lorsque l\'on éteint le bouton de la multi-prise?\n
+        - Que se passe-t-il lorsque l\'on éteint le bouton de la prise multiple?\n
         Connectez ensuite un appareil à transformateur à la prise allumée (p.ex. le rasoir), que constatez-vous?
         </item>
         
         <item>
-        A cause de la taille importante de son moteur, une perceuse génère un champs magnétique relativement 
+        A cause de la taille importante de son moteur, une perceuse génère un champ magnétique relativement 
         important.\n 
-        - Allumez la perceuse et mettez-là en marche.\n
+        - Allumez la perceuse et mettez-la en marche.\n
         - Eloignez vous progressivement du capteur.\n
         - Au bout de quelle distance le capteur ne détecte-t-il plus rien?\n
         - Pourquoi pensez-vous que malgré le champ important la perceuse n\'est pas véritablement dangereuse?
@@ -73,14 +73,14 @@
     	</item>
     	
     	<item>
-    	Plus le moteur électrique est gros plus le champs magnétique devient fort. 
+    	Plus le moteur électrique est gros plus le champ magnétique devient fort. 
     	Toutefois comme l\'on est exposé pour de très courtes durées à ces champs ils sont 
     	pratiquement inoffensifs. La longueur d\'exposition à un champ est donc très importante 
     	dans le calcul du risque.
     	</item>
     	
     	<item>
-    	Les ampoules génèrent des champs magnétiques relativement faible. Toutefois, les ampoules économiques, 
+    	Les ampoules génèrent des champs magnétiques relativement faibles. Toutefois, les ampoules économiques, 
     	les éclairages halogènes basse-tension et les néons génèrent des champs plus importants. 
     	Il est donc conseillé de garder une certaine distance (~2 m) avec ces éclairages.
     	</item>
@@ -89,8 +89,8 @@
     	Les transformateurs génèrent des champs magnétiques dès qu\'ils sont branchés 
     	(et consomment de l\'électricité!) et cela même s\'ils ne sont pas utilisés. 
     	La taille de ces champs varie en fonction de la taille du transformateur et reste en général 
-    	assez faible. Il est toutefois prudent (et économique!) d\'éteindre les prise-multiples connectées 
-    	à des transformateurs lorsqu\'elles ne sont pas utilisés, en particulier dans les endroits où 
+    	assez faible. Il est toutefois prudent (et économique!) d\'éteindre les prises multiples connectées 
+    	à des transformateurs lorsqu\'elles ne sont pas utilisées, en particulier dans les endroits où 
     	l\'on passe beaucoup de temps (p.ex. la chambre à coucher).
     	</item>
     </string-array>
@@ -136,7 +136,7 @@
         </item>
         <item>
         Pour cette expérience utilisez votre propre téléphone. 
-        Si vous n\'en avez pas utilisez le Nokia mis à disposition.\n
+        Si vous n\'en avez pas demandez autour de vous.\n
         - Allumez le téléphone et passez un appel à un ami.
         - Essayez de vous éloigner du détecteur pendant l\'appel.\n 
         - Que constatez-vous? Approchez le téléphone au plus près du détecteur. Placez maintenant le détecteur au bout 
@@ -174,10 +174,10 @@
         puissant étant donné que l\'antenne peut se situer à quelque kilomètres (p.ex. ~10 
         fois plus puissant que le DECT). De plus, sans kit mains libres, on le tient à 
         quelques millimètres de notre tête. Finalement, on sait encore peu de choses sur 
-        les effets autres qu\'un réchauffement. Par sécurité il faut donc veillez à respecter 
+        les effets autres qu\'un réchauffement. Par sécurité il faut donc veiller à respecter 
         quelques règles:\n
         1) Choisir un mobile dont le SAR (TAS/DAS en français) sont faibles. Cela veut dire que 
-        la puissance absorbé par notre corps est plus faible.
+        la puissance absorbée par notre corps est plus faible.
         2) Utiliser un maximum le kit mains libres (vous avez constaté la différence importante!).\n
         3) Eviter de téléphoner en voiture ou en train: votre téléphone transmet à pleine puissance à cause de 
         la structure métallique de votre voiture/train et du changement incessant d\'antenne.\n

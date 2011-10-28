@@ -11,7 +11,9 @@
 // Setting the sensor pins.
 int lfAnalogIn = 0;
 int hfAnalogIn = 5;
-int noiseLf = 4;
+
+int noiseLf = 0;
+// noise for the HF sensor, according to LT5534 specifications: +/- 0.2 Volts
 int noiseHf = 40;
 int currentNoise;
 
@@ -82,7 +84,7 @@ void setup()
 
 // Given a value read from the analogRead, the function returns the voltage.
 float getVoltageForValue(int value) {
-  return value * 0.0049;
+  return value * 0.004882813;
 }
 
 int getAvgSensorValue(int sensorPin) {
