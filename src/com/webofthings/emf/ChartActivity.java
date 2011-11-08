@@ -95,7 +95,7 @@ public class ChartActivity extends Activity {
 						if (params.isLF()) {
 							dataLog.storeLFDataDetailed(y);
 						} else {
-							dataLog.storeLFDataDetailed(y);
+							dataLog.storeHFDataDetailed(y);
 						}
 					}
 				}

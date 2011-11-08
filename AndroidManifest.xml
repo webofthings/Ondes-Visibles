@@ -14,12 +14,6 @@
                 <category android:name="android.intent.category.DEFAULT" />
             </intent-filter>
         </activity>
-        <activity android:label="@string/BF_activity_title" android:name=".BFActivity">
-            <intent-filter>
-                <action android:name="com.webofthings.emf.BFACTIVITY" />
-                <category android:name="android.intent.category.DEFAULT" />
-            </intent-filter>
-        </activity>
         <activity android:theme="@android:style/Theme.Black.NoTitleBar.Fullscreen" android:label="@string/chart_activity_title" android:name=".ChartActivity" android:screenOrientation="landscape">
             <intent-filter>
                 <action android:name="com.webofthings.emf.CHARTACTIVITY" />

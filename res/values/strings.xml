@@ -1,9 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="lang_warning">Seuls Deutsch et Français fonctionnent avec cette application.</string>
+    <string name="lang_warning">Diese Anwendung ist nur auf Deutsch und en Français anwendbar</string>
     <string name="button_settings">Sprache andern...</string>
     <string name="app_name">Ondes Visibles!</string>
-    <string name="device_picker_activity_name">Choix d\'appareils</string>
+    <string name="device_picker_activity_name">Choisir un appareil...</string>
+    <string name="chart_activity_title">Mesures</string>
+    <string name="field_selection_title">Choisir un type de fréquence...</string>
     <string name="info_activity_title">Le saviez-vous?</string>
     <string name="experiment_activity_title_instructions">Instructions</string>
     <string name="experiment_activity_title_conclusion">Conclusions</string>
@@ -117,7 +119,7 @@
 	Dévelopment logiciel:\nDominique Guinard\n\n
 	Concept:\nRobert Unteregger, Dominique Guinard\n\n
 	Graphisme: dryicons.com/freeicons\n\n
-	Sources:\nmobile-research.ethz.ch, OFEFP, divers rapports et articles.\n\n
-	Ce projet est une collaboration Cudrefin02 et ETH Zurich (WebOfThings)\n\n
+	Sources:\nmobile-research.ethz.ch, OFEV, divers rapports et articles.\n\n
+	Ce projet est une collaboration Cudrefin02 et ETH Zurich (webofthings.org)\n\n
 	</string>
 </resources>

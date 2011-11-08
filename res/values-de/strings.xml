@@ -1,15 +1,124 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="app_name">EMF-Uncovered</string>
-    <string name="info_activity_title">Informations</string>
-    <string name="home">retour...</string>
-    <string name="chart_activity_title">Chart</string>
-    <string name="BF_activity_title">Basses Fréquences</string>
-    <string name="device_picker_activity_title">"Choix d'appareils"</string>
-    <string name="field_selection_title">Choix de fréquence</string>
-    <string name="experiment_title">Expérience</string>
-    <string name="next_experiment">experience suivante</string>
-    <string name="previous_experiment">experience précédente</string>
-    <string name="lf_info">Ipsum low lorem!</string>
-    <string name="hf_info">Ipsum high lorem!</string>
+<string name="lang_warning">Seuls Deutsch et Français fonctionnent avec cette application.</string>
+    <string name="button_settings">andere Sprachen...</string>
+    <string name="app_name">Ondes Visibles!</string>
+    <string name="device_picker_activity_name">Gerät auswählen...</string>
+    <string name="info_activity_title">Wussten Sie, dass ...?</string>
+    <string name="chart_activity_title">Messungen</string>
+    <string name="field_selection_title">Frequenz auswählen...</string>
+    <string name="experiment_activity_title_instructions">Anleitung</string>
+    <string name="experiment_activity_title_conclusion">Folgerungen</string>
+    <string name="show_experiment">Anwendungen</string>
+    <string name="show_experiment_conclusion">Folgerungen</string>
+    <string name="show_more_info">Mehr Info</string>
+    <string name="start_experiment">start</string>
+    <string name="stop_experiment">stop</string>
+    <string name="vibrator">Vibrator</string>
+    <string name="lf_human_readable">mit niedriger  Frequenz</string>
+    <string name="hf_human_readable">mit hoher Frequenz</string>
+    <string name="field">Elektromagnetisches Feld</string>
+    <string name="activate_sensor">Aktivierung Sensor</string>
+    <string name="no_device_selected_lf">Dieser Modus erlaubt freies Experimentieren mit den niedrigen Frequenzen</string>
+    <string name="no_device_selected_hf">Dieser Modus erlaubt freies Experimentieren mit den hohen Frequenzen</string>
+    <string name="tutorial_picker_title">Gebrauchsanweisung</string>
+    <string name="toggle_debug">Simulation</string>
+    <string name="simulation_on">Simulation on!</string>
+    <string name="simulation_off">Simulation off!</string>
+    <string name="toggle_log">Log</string>
+    <string name="log_on">Log on!</string>
+    <string name="log_off">Log off!</string>
+    <string name="more_info_title">In den Broschüren...</string>
+    <string name="more_info_description">Für mehr Infos begeben Sie sich auf die Seite</string>
+    <string name="more_info_description_device">Für mehr Infos über diese Geräte begeben Sie sich auf die Seite </string>
+    <string name="more_info_flyer_1">der Broschüre 1 (Elektrosmog im Alltag) und</string>
+    <string name="more_info_flyer_2">der Broschüre 2 (Elektrosmog in der Umwelt).</string>
+    
+    
+    <string name="tut_1_title">Electrosmog</string>
+    <string name="tut_1_a_text">
+    "Um besser zu verstehen, was ein elektromagnetisches Feld ist, schauen wir uns an, was im nahen Umfeld eines Gerätes wie dem Fernseher vor sich geht."
+	</string>
+    <string name="tut_1_b_text">
+    "Wenn der Stecker nicht eingesteckt ist, gibt es kein elektromagnetisches Feld."
+    </string>
+    <string name="tut_1_c_text">
+    "Stecken wir den Stecker in die Steckdose, noch ohne den Fernseher einzuschalten, entsteht ein elektrisches Feld. Würden wir uns das Licht und nicht die Elektrizität ansehen, könnten wir das Feld mit dem erhellten Raum vergleichen: Ein Feld ist eine Zone, in der etwas wirkt. Nicht unähnlich dem Licht, verbreiten sich elektrische Felder kaum durch Materialien hindurch. Wir können uns also leicht vor ihnen schützen (Mauern, Böden, Metallplatten etc.)"
+	</string>
+    <string name="tut_1_d_text">
+	"Wird der Fernseher eingeschaltet, bildet sich ein neues Feld: ein magnetisches Feld. Im Unterschied zum elektrischen Feld verbreitet sich dieses durch fast alle Materialien. Daher ist es schwierig, sich gegen dieses zu isolieren."
+    </string>
+    <string name="tut_1_e_text">
+	"Dagegen sind zwei Regeln für beide Arten von Feldern gültig:\n1) Die Stärke der Felder steht im Verhältnis zur Spannung (Volt) und zur eingesetzten Strommenge (Ampere). Je schwächer also die  Sendeleistung, desto schwächer das Feld (desto bewölkter das Wetter :-))\n2) Die Felder Felder verlieren mit zunehmender Distanz an Stärke. Je weiter man sich also vom Gerät entfernt, desto schwächer ist das Feld. Wiederum ist es ähnlich wie bei der Sonne: Je weiter wir uns von der Lichtquelle entfernen, um so weniger heiss/hell ist es."
+ 	</string>
+    <string name="tut_1_f_text">
+    "Und zu guter Letzt hier noch das elektromagnetische Feld, das ein Haartrockner erzeugt (Quelle: BAFU). Das, was als \"Elektrosmog\" bezeichnet wird, sind die Felder, die von den Geräten erzeugt werden, die wir im Alltag verwenden." 
+    </string>
+    <string name="tut_1_more_info_1">2</string>
+ 	<string name="tut_1_more_info_2">4</string>
+    
+    <string name="tut_2_title">Fréquences</string>
+    <string name="tut_2_a_text">
+    "Die elektromagnetischen Felder wechseln die Phasen (+/-) und ihre Stärke in regelmässiger Weise. Man sagt, sie oszillieren mit einer bestimmten Frequenz. Das Mass dieser Frequenzen ist das Hertz. 1 Hz steht für ein Zyklus bzw. Eine Oszillation (Schwingung) pro Sekunde. Wir teilen die Felder in zwei Arten ein: in Felder mit niedriger Frequenz und in Felder mit hoher Frequenz, je nach Anzahl der Schwingung pro Zeiteinheit."
+    </string>
+    <string name="tut_2_b_text">
+    "Die Felder mit niedriger Frequenz sind jene mit weniger als 30'000 Oszillationen (Schwingungen) pro Sekunde (&lt;30 kHz). In diesem Bereich liegen die Eisenbahn, das Verteilernetz (Steckdosen, Masten ect.) und viele elektrische Geräte des täglichen Gebrauchs."
+    </string>
+    <string name="tut_2_c_text">
+    "Die Felder mit hoher Frequenz sind jene mit über 30'000 Oszillationen pro Sekunde (&gt;30 kHz). Die hohen Frequenzen werden vor allem dazu eingesetzt, um Daten zu übermitteln (Diese werden mittels Zyklen kodiert.); zum Beispiel zum Senden über  TV/Radio, für die Mobiltelefone (Bluetooth 2.4GHz, GSM 1.8GHz, 3G 2.1GHz, etc.), für das WiFi (2.4 GHz) für die Microwellen-Wärmer (2.4 Ghz). Bei solch hohen Frequenzen verbinden sich elektrische und magnetische Felder und \"reisen\" gemeinsam. Deshalb sprechen wir von \"elektromagnetischen Feldern\"."
+    </string>
+    <string name="tut_2_d_text">
+	"Oberhalb der Hochferquenzen gibt es noch weitere Wellen, die mit noch höherer Frequenz oszillieren, wie zum Beispiel jene des Lichts. Mit noch höherer Frequenz als jener des Lichts oszillieren  die «ionisierenden» Wellen. Diese vermögen Atome und Moleküle zu verändern. So zum Beispiel die Röntgen- und Gammastrahlen der Radioaktivität. Deshalb sind sie so gefährlich." 
+    </string> 
+    <string name="tut_2_more_info_1">2</string>
+ 	<string name="tut_2_more_info_2">4-5</string>
+ 	
+    <string name="tut_3_title">Risques et effets</string>
+    <string name="tut_3_a_text">
+    "Der menschliche Körper hat Leitfähigkeit. Das bedeutet, dass eletrische und magnetische Felder im menschlichen Körper Ströme erzeugen können."
+    </string>   
+    <string name="tut_3_b_text">
+    "Bei niedriger Frequenz dringen elektrische Felder nicht durch die Haut (Ausnahme: Bei direktem Kontakt – etwa, wenn man auf die dumme Idee kommt, einen Finder in die Steckdose zu stecken!!!) Dagegen durchdringen magnetische Felder den Körper. Bei hoher Intensität kann dies Nerven- und Muskelreizungen verursachen (zum Beispiel im Herz). Solche Intensitäten treffen wir jedoch in umserem Alltag nicht an - dank der Grenzwerte, die von der Regierung festgelegt worden sind."
+    </string>    
+    <string name="tut_3_c_text">
+    "Komplexer verhält es sich bei den schwächeren Intensitäten der Felder mit niedriger Frequenz. Hier gehen die Ansichten auseinander. Untersuchungen haben gewisse Einwirkungen belegt, wenn man solchen Felder für sehr lange Zeit oder ständig ausgesetzt ist (z.B., wenn jemand sehr nahe bei einer Hochspannungsleitung wohnt). Festgestellt wurden Veränderungen im Verhalten (Nervosität) und beim Hervorbringen von Hormonen. Ebenso ein leicht erhöhtes Leukemie-Risiko für Kinder. Bisher verfügen die Wissenschaftler jedoch noch über keine gesicherten Erkenntnisse."
+    </string>
+    <string name="tut_3_d_text">
+    "Bei den Feldern mit hoher Frequenz gilt bisher nur eine Erwärmung als Auswirkung als erwiesen. Dies kann beim Gebrauch eines Mikrowellen-Ofens mit einer Frequenz von 2.4 GHz und mehr beobachtet werden. Sie wärmen unsere Speisen. Diese Frequenz ist ähnlich jener der Mobiltelefone, doch wird diese mit einer 500 mal schwächeren Intensität  angewandt (zudem befindet sich das Mobiltelephon nicht in einem metallenen Käfig. Bei einem 30minütigen Telefongespräch  mit  einem Mobiltelefon, das direkt an das Ohr gehalten wird, stellt man eine Erwärmung des Kopfes um 0.4 Grad fest. Dies kann möglicherweise das Auftreten von leichtem Kopfweh erklären. Um uns vor Auswirkungen solcher Erwärmungen zu schützen, sind Grenzwerte festgelegt worden."
+    </string>
+    <string name="tut_3_e_text">
+    "Ausser solchen Erwärmungen sind in unserem Alltag keine weiteren Auswirkungen hoher Frequenzen bekannt. Dennoch vermutet eine Anzahl von Wissenschaftlern, dass weitere Einwirkungen vorliegen: auf den Schlaf, Veränderungen von Zellen und der DNA sowie ein erhöhtes Krebsrisiko. Es gibt Untersuchungen, die diesen Vermutungen zu widersprechen scheinen. - Dies zeigt, dass wir uns hier an der Grenze wissenschaftlicher Erkenntnis befinden: Weitere Einwirkungen können bisher nicht nachgewiesen, aber auch nicht ausgeschlossen werden. Wir wissen schlicht nicht, wie es sich verhält."
+    </string>
+    <string name="tut_3_more_info_1">13-14</string>
+ 	<string name="tut_3_more_info_2">12-13</string>
+    
+    <string name="tut_4_title">Preventionsmassnahmen</string>
+    <string name="tut_4_a_text">
+    "Weil wir noch nicht über alle Risiken der elektromagnetischen Felder Bescheid wissen, sind wir gut beraten, wenn wir diejenigen Einwirkungen der Felder, die sich vermeiden lassen, auch wirklich vermeiden. Mehrere einfache Massnahmen erlauben uns diese Einwirkungen zu vermindern. Damit können wir das Risiko merklich senken. - Die meisten Wissenschaftler sind sich darin einig, dass die Dauer der Einwirkung sehr wichtig ist."
+    </string>
+    <string name="tut_4_b_text">
+    "Ausziehen und abschalten! Die meisten unserer Geräte müssen nicht ständig angesteckt und angeschaltet sein. Dadurch sind wir den Feldern weniger ausgesetzt und sparen zudem noch Energie. Ebenso ist der Stand-by-Zustand zu vermeiden; er unterbricht das Wirken der Felder nicht. Auch eingesteckte Kabel haben Felder. Also ausziehen, wenn sie nicht gebraucht werden. Die meisten Mobiltelefone verfügen über einen \"Flugmodus\". Dieser stellt sicher, dass Stromfluss unterbrochen ist."
+    </string>
+    <string name="tut_4_c_text">
+    "Abstand halten! Weil die elektromagnetischen Felder mit zunehmender Distanz schwächer werden, ist sich fernhalten eine gute Massnahme. Im Fall der Mobiltelefone erlaubt der Gebrauch eines Freisprechkabels, das Telefon vom Kopf fern zu halten. Damit wird die direkte Einwirkung auf den Kopf vermindert."
+    </string>
+    <string name="tut_4_d_text">
+    "Nicht in meinem Bett! Wir schlafen lange. Deshalb sollten elektromagnetische Felder im Schlafzimmer vermieden werden. Entfernen wir den Fernseher, WiFi und das kabellose Telefon aus dem Zimmer. Das Mobiltelefon auf Flugmodus stellen; elektrische Geräte/Kabel und den elektrischen Wecker mindestens in 2m Entfernung vom Bett platzieren."
+    </string>
+    <string name="tut_4_e_text">
+    "Jetzt, da wir die uns erste Grundkenntnisse über elektromagnetische Felder angeeignet haben und deren Risiken kennen, sind wir bereit zur Durchführung von Experimenten. Im Verlauf der Experimente werden zu jedem Gerät genauere Massnahmen zum Vorbeugen gegen die Einwirkungen der Felder aufgeführt. Machen wir die Wellen sichtbar! (Drücken Sie auf den letzten Knopf, um zu den Experimenten zu gelangen.)"
+    </string>
+    <string name="tut_4_more_info_1">15</string>
+ 	<string name="tut_4_more_info_2">29-30</string>
+
+	<string name="about_activity_title">Danksagung</string>
+	<string name="about">
+	Ondes Visible! Version 1.0\n\n
+	Sensoren und Hardware:\nJean-Pierre Guinard, Dominique Guinard\n\n
+	Programm-Entwicklung:\nDominique Guinard\n\n
+	Koncept:\nRobert Unteregger, Dominique Guinard\n\n
+	Graphik: dryicons.com/freeicons\n\n
+	Quellen:\nmobile-research.ethz.ch, BAFU, verschiedene Berichte und Artikel.\n\n
+	Dieses Projekt ist eine gemeinsame Produktion von Cudrefin02 und der ETH Zurich (webofthings.org))\n\n
+	</string>
 </resources>

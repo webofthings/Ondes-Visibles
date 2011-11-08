@@ -1,21 +1,195 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string-array name="hf_devices_array">
-        <item>DECT (Schnurlostelefon)</item>
-        <item>Handy</item>
-        <item>WiFi Router</item>
-        <item>Andere...</item>
-    </string-array>
-    <string-array name="lf_devices_array">
-        <item>Borer</item>
-        <item>Wecker</item>
+ 
+ <!-- Experiments: LF -->
+
+	<string-array name="lf_devices_array">
         <item>Steckdose</item>
-        <item>WiFi Router</item>
-        <item>Andere...</item>
+        <item>Bohrer</item>
+        <item>Beleuchtung</item>
+        <item>Transformatoren</item>
+        <item>Andere</item>
+    </string-array>  
+    
+    <string-array name="exp_lf_more_info_1">
+    	<item>4</item>
+    	<item>8</item>
+    	<item>3</item>
+    	<item>4</item>
+    	<item>2</item>
     </string-array>
+    
+    <string-array name="exp_lf_more_info_2">
+    	<item>32</item>
+    	<item>31</item>
+    	<item>33</item>
+    	<item>32</item>    	
+    	<item>28</item>
+    </string-array>  
+    
+    <string-array name="exp_lf_instructions">
+        <item>
+        Die elektrische Steckdose erzeugt magnetische Felder. Schalten Sie den Knopf des Mehr-Steckers ein und testen 
+        Sie das ganz nahe Feld mit dem Sensor (stecken Sie die Antenne nicht in die Löcher; das würde den Sensor zerstören. 
+        Das gemessene Feld ist ein magnetisches mit niedriger Frequenz
+ 		(50 Hz).\n
+ 		- Halten Sie nun den Sensor um einige Zentimeter weiter entfernt. Die Intensität des Feldes nimmt ab.\n
+ 		- Ab welcher Distanz stellt der Sensor nichts mehr fest?\n
+ 		- Was geschieht, wenn Sie den Mehr-Stecker ausschalten?\n
+ 		- Stecken Sie anschliessend ein Transformatorgerät (z.B. des Rasierapparates) in den angeschalteten Mehr-Stecker. Was stellen Sie fest? 
+        </item>
+        
+        <item>
+        Wegen der Grösse seines Motors erzeugt ein Bohrer ein vergleichsweise starkes magnetisches Feld.\n 
+        - Setzen Sie den Bohrer in Gang. Entfernen Sie sich langsam vom Sensor.\n
+        - Ab welcher Distanz entdeckt der Sensor gar nichts mehr?\n 
+        - Weshalb denken Sie, dass der Bohrer trotz des vergleichsweise starken Feldes nicht wirklich gefährlich ist?\n
+        </item>
+        
+        <item>
+        Auch Glühbirnen erzeugen magnetische Felder, die einen mehr als andere.\n
+        - Schliessen Sie verschiedene Birnen (normale und Sparbirnen) an und testen Sie diese.\n
+        - Welche erzeugt das grösste Feld, und weshalb? Nähern Sie den Sensor einer Neonröhre. Was stellen Sie fest?\n
+        </item>
+        
+        <item>
+        Die Transformatorgeräte erzeugen elektromagnetische Felder.\n
+        - Schliessen Sie das WiFi an den Mehr-Stecker an und schalten Sie diesen ein.\n
+        - Was beobachten Sie? Unterbrechen Sie nun den Strom für die kleine runde Steckdose seitens WiFi.\n
+        - Was stellen Sie fest? Wiederholen Sie das Vorgehen mit dem Rasierapparat und dessen Transformator.
+        </item>
+    </string-array>
+    
+    <string-array name="exp_lf_conclusions">
+    	<item>
+    	Es lont sich, die Mehr-Stecker auszuschalten – sowohl um Energie zu sparen als auch um die Risiken zu senken. 
+    	Platzieren Sie die angeschalteten Mehr-Stecker mindestens in 2m Entfernung Ihres Körpers. 
+    	Dies scheint eine sinnvolle Massnahme. Bei 2m ist das magnetische Feld beinahe 0. 
+    	</item>
+    	
+    	<item>
+    	Je grösser der Elektromotor, desto stärker das magnetische Feld. 
+    	Weil wir diesen Feldern jedoch meist nur für kurze Zeit ausgesetzt sind, 
+    	sind sie praktisch ungefährlich. Die Dauer, in der wir einem Feld ausgesetzt sind, 
+    	ist sehr also wichtig für die Einschätzung des Risikos. 
+    	</item>
+    	
+    	<item>
+    	Die Glühbirnen erzeugen ein vergleichsweise schwaches magnetisches Feld. 
+    	Die Sparbirnen, Halogenlampen mit niedriger Frequenz und Neonröhren erzeugen stärkere Felder. 
+    	Auch hier ist es ratsam, eine Distanz von etwa 2m zu wahren. 
+    	</item>
+    	
+    	<item>
+    	Die Transformatoren erzeugen magnetische Felder und verbrauchen Strom, sobald Sie angeschlossen sind, 
+    	auch wenn sie nicht gebraucht werden. Die Ausdehnung dieser Felder hängt ab von der Grösse des Transformators 
+    	und bleibt in der Regel recht gering. Es ist dennoch klug (und sparsam!), die Mehr-Stecker, die mit 
+    	Transformatoren verbunden sind, auszuschalten, wenn sie nicht gebraucht werden, insbesondere an Orten, 
+    	wo man viel Zeit verbringt (zum Beispiel im Schlafzimmer). 
+    	</item>
+    </string-array>
+   
+<!-- Experiments: HF -->     
+        
+   <string-array name="hf_devices_array">
+        <item>Kabelloses Telefon (DECT)</item>
+        <item>WiFi</item>
+        <item>Mobiltelefon</item>
+        <item>Andere</item>
+    </string-array>
+    
+    <string-array name="exp_hf_more_info_1">
+    	<item>5</item>
+    	<item>7</item>
+    	<item>7</item>
+    	<item>2</item>
+    </string-array>
+    
+    <string-array name="exp_hf_more_info_2">
+    	<item>53</item>
+    	<item>54</item>
+    	<item>39-45</item>
+    	<item>52-55</item>
+    </string-array>  
+    
+    <string-array name="exp_hf_instructions">
+        <item>
+        Schliessen Sie das kabellose Telefon (DECT) an der Steckdose an.\n
+        - Was stellen Sie fest? Setzen Sie Ihre Beobachtung für eine Minute fort.\n
+        - Was beobachten Sie? Entfernen Sie sich einige Meter, dann um 10 Meter; gehen Sie in einen anliegenden Raum.\n
+        - Was erhalten Sie für Angaben?
+        </item>
+        <item>
+         Schliessen Sie das WiFi an.\n
+        - Was stellen Sie fest? Und nach 30 Sekunden?\n
+        - Gehen Sie im Zimmer umher und messen Sie.\n  
+        - Gehen Sie in andere Räume und nach draussen.\n 
+        - Bis auf welche Distanz reagiert der Sensor?\n 
+        - Ändern Sie die Orientierung der WiFi Antenne. Was beobachten Sie? 
+        </item>
+        <item>
+        Pour cette expérience utilisez votre propre téléphone. 
+        Si vous n\'en avez pas demandez autour de vous.\n
+        - Allumez le téléphone et passez un appel à un ami.\n
+        - Essayez de vous éloigner du détecteur pendant l\'appel.\n 
+        - Que constatez-vous? Approchez le téléphone au plus près du détecteur. Placez maintenant le détecteur au bout 
+        du kit mains libres (~30 cm).\n
+        - Comparez les observations. Comparez également les différents téléphones dans la salle.\n 
+        - Essayez d\'envoyer des SMS ou de télécharger des données (si vous avez un plan données, sinon ça risque de coûter cher :-/).\n 
+        - Essayez finalement de mettre votre téléphone en mode \"avion\" que remarquez-vous?
+        
+        Benutzen Sie für diese Anwendung Ihr Mobiltelefon. Wenn Sie kein eigenes haben, benutzen Sie eines ihrer Kollegen.\n 
+        - Schalten Sie das Telefon ein und rufen Sie einen Freund an.\n
+        - Entfernen Sie sich während des Anrufs vom Sensor.\n
+        - Was stellen Sie fest? Halten Sie das Telefon ganz nahe an den Sensor.\n
+        - Halten Sie nun den Sensor an das andere Ende des Freisprechkabels (~30cm)\n
+        - Vergleichen Sie ihre Beobachtungen. Ebenso die verschieden Telefone.\n
+        - Versenden Sie zum Schluss ein SMS oder laden Sie einige Daten herunter 
+        (falls Sie wissen, wie hierzu vorzugehen ist, sonst könnte es kostspielig werden :-/).\n 
+        - Stellen Sie schliesslich Ihr Telefon auf \"Flugmodus\". Was stellen Sie fest? 
+        </item>
+        
+    </string-array>
+
+   
+    <string-array name="exp_hf_conclusions">
+        <item>
+        Die kabellosen Telefone erzeugen Felder mit hohen Frequenzen (1880-1900 MHz). Die Standard-Ausrüstung eines DECT, mit der viele dieser Telefone ausgerüstet sind, ist so angefertigt, dass die Basisstation ständig ein Signal aussendet. Damit erzeugt sie ein Feld, das bis in 100-300m Entfernung messbar ist, solange sie angeschlossen ist. Man sollte daher die Basisstation nicht in der Nähe von Zimmern, Betten, Kanapees oder  Büros platzieren und die Basisstation während der Nacht ausschalten. Noch einfacher geht es mit den neuen ECO-DECT-Geräten (ECO+). Sie erzeugen Felder nur, wenn wir telefonieren.  
+        </item>
+        <item>
+        WiFi Geräte erzeugen elektromagnetische Felder mit hoher Frequenz  (2.4 – 5.7 Ghz). Sie senden pro Sekunde mehrere Signale aus. Damit teilen sie Geräte, die sich mit ihnen verbinden können, ihre Präsenz mit; auch wenn sie nicht gebraucht werden. Man sollte daher vermeiden, sie in der Nähe von Wohnzimmern zu platzieren. Es ist auch ratsam, das WiFi während der Nacht, wenn es nicht gebraucht wird, auszuschalten. Eine gute Massnahme, um sich der Einwirkung des WiFi zu entzeihen (und zu sparen) ist die gemeinsame Benutzung eines WiFi durch mehrere Nachbarn. 
+        </item>
+        <item>
+        Mobiltelefone erzeugen elektromagnetische Felder mit hoher Frequenz  (GSM: 1800 MHz, 3G: 2100 Mhz). 
+        Im Vergleich mit den andern Geräten starke Felder (etwa 10x stärkere als jene der kabellosen Telefone): 
+        Die Antenne kann sich in mehreren Kilometern Entfernung befinden. Zudem halten wir es, wenn wir kein Freisprechkabel benutzen, 
+        direkt an unseren Kopf. Und wir wissen, abgesehen vom Erwärmen, kaum etwas über weitere Nebenwirkungen! Aus Sicherheitsgründen 
+        sollte man daher die folgenden Regeln beachten:\n
+        1.) Ein Mobiltelefon mit schwachem SAR Wert wählen.\n
+        2.) Wenn immer möglich das Freisprechkabel benutzen.\n
+        3.) Es vermeiden, in Auto oder im Zug zu telefonieren: Ihr Telefon sendet die ganze Zeit mit voller 
+        Kraft - wegen des Metallkäfigs von Zug/Auto und des unaufhörlichen Wechsels der Antennen.\n 
+        4.) Benutzen Sie so oft wie möglich SMS. Dessen Sendung dauert 1-2 Sekunden.\n
+        5.) Stellen Sie Ihr Telephon auf Flugmodus, wenn Sie es nicht brauchen (z.B. während der Nacht).\n
+        6.) Sonst verbindet es sich regelmässig zur Antenne; ebenso in Zug/Auto, wo es ständig sendet, 
+        um mit der nächsten Antenne Kontakt aufzunehmen.\n
+        </item> 
+    </string-array>
+    
     <string-array name="frequencies_array">
-        <item>Niederfrequenz (&amp;lt;30 kHz)</item>
-        <item>Hochfrequenz (>3 30 kHz)</item>
-        <item>Modifier la langue...</item>
+        <item>Niedrige Frequenzen (&lt;30 kHz)</item>
+        <item>Hoch Frequenzen (&gt;30 kHz)</item>
     </string-array>
+    
+<!-- Tutorials -->
+    
+	
+    <string-array name="tutorials">
+        <item>Elektromagnetische Felder und Elektrosmog</item>
+        <item>Elektromagnetische Frequenzen</item>
+        <item>Gefahren und Wirkungen</item>
+        <item>Vorbeugen</item>
+    </string-array>
+
+
 </resources>
