@@ -1,5 +1,10 @@
 package com.webofthings.emf.experiments;
 
+
+/**
+ * Bean class containing the data of an experiment: i.e., instructions and conclusions.
+ * @author <a href="http://www.guinard.org">Dominique Guinard</a>
+ */
 public class ExperimentInfo
 {
   private String instructions;

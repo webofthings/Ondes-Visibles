@@ -29,14 +29,14 @@
     
     <string-array name="exp_lf_instructions">
         <item>
-        Les prise électriques émettent des champs magnétiques. Allumez le bouton de la 
+        Les prise électriques émettent des champs magnétiques. Allumez le bouton d\'une 
         prise-multiple et testez le champ tout près avec le capteur (ne mettez pas l\'antenne 
         dans le trou, ceci détruirait le capteur!). Le champ capté est de type magnétique à 
         basse-fréquence (50 Hz).\n
         - Reculez maintenant le capteur de quelques centimètres.\n
         - Au bout de quelle distance le capteur ne détecte-t-il plus rien?\n
+        - Connectez ensuite un appareil à transformateur à la prise allumée (p.ex. un rasoir, un ordinateur portable), que constatez-vous?
         - Que se passe-t-il lorsque l\'on éteint le bouton de la prise multiple?\n
-        Connectez ensuite un appareil à transformateur à la prise allumée (p.ex. le rasoir), que constatez-vous?
         </item>
         
         <item>

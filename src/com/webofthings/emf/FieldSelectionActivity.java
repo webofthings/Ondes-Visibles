@@ -9,6 +9,10 @@ import android.widget.ListView;
 
 import com.webofthings.emf.utils.Params;
 
+/**
+ * This Activity is used to pick between LF and HF experiments.
+ * @author <a href="http://www.guinard.org">Dominique Guinard</a>
+ */
 public class FieldSelectionActivity extends ListActivity {
 	String[] fields;
 

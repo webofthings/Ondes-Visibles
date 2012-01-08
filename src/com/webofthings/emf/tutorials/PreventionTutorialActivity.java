@@ -10,6 +10,10 @@ import android.widget.ImageButton;
 import com.webofthings.emf.R;
 import com.webofthings.emf.utils.InfoData;
 
+/**
+ * This is the tutorial about simple means to prevent side-effects from exposure.
+ * @author <a href="http://www.guinard.org">Dominique Guinard</a>
+ */
 public class PreventionTutorialActivity extends AbstractTutorialActivity
 {
   LinkedList<InfoData> infoDataList;

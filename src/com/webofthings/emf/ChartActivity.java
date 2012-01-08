@@ -25,6 +25,10 @@ import com.webofthings.emf.arduino.ArduinoLinkSimulator;
 import com.webofthings.emf.experiments.ExperimentActivity;
 import com.webofthings.emf.utils.Params;
 
+/**
+ * This is the activity responsible for displaying the measurements made by both sensors.
+ * @author <a href="http://www.guinard.org">Dominique Guinard</a>
+ */
 public class ChartActivity extends Activity {
 	private static final double INITIAL_X_MAX = 50.0D;
 	private static final double INITIAL_Y_MAX = 10.0D;

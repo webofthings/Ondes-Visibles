@@ -6,6 +6,10 @@ public class InfoData
   private int imageId;
   private String moreInfo[];
 
+  /**
+   * This is a bean class modelling information data.
+   * @author <a href="http://www.guinard.org">Dominique Guinard</a>
+   */
   public InfoData(int textId, int imageId, String moreInfo1, String moreInfo2)
   {
     this.textId = textId;

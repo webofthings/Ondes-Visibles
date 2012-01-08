@@ -5,6 +5,10 @@ import java.util.LinkedList;
 import com.webofthings.emf.R;
 import com.webofthings.emf.utils.InfoData;
 
+/**
+ * This is the tutorial about known and unknown risks of EMF exposure.
+ * @author <a href="http://www.guinard.org">Dominique Guinard</a>
+ */
 public class RisksTutorialActivity extends AbstractTutorialActivity
 {
   LinkedList<InfoData> infoDataList;

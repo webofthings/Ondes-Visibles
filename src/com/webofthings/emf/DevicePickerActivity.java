@@ -9,6 +9,10 @@ import android.widget.ListView;
 
 import com.webofthings.emf.utils.Params;
 
+/**
+ * This Activity is used to pick a device to experiment with.
+ * @author <a href="http://www.guinard.org">Dominique Guinard</a>
+ */
 public class DevicePickerActivity extends ListActivity
 {
   private Params params;

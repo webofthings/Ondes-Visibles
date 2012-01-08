@@ -11,6 +11,12 @@ import android.widget.Toast;
 
 import com.webofthings.emf.utils.Params;
 
+
+/**
+ * This is the main Activity providing access to all the tutorials, experiments and configuration (through a press
+ * on the "Menu" key).
+ * @author <a href="http://www.guinard.org">Dominique Guinard</a>
+ */
 public class MainActivity extends Activity
 {
   public void onCreate(Bundle savedInstanceState)

@@ -3,7 +3,7 @@ package org.microbridge.server;
 /**
  * 
  * Base class for implementing a ServerListener. Extend this class to capture a subset of the server events.
- * 
+ * from the http://code.google.com/p/microbridge/ project
  * @author Niels Brouwers
  *
  */

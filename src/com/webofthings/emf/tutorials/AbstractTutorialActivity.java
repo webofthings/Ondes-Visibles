@@ -18,6 +18,10 @@ import com.webofthings.emf.R;
 import com.webofthings.emf.utils.InfoData;
 import com.webofthings.emf.utils.Params;
 
+/**
+ * This is an abstract tutorial.
+ * @author <a href="http://www.guinard.org">Dominique Guinard</a>
+ */
 public abstract class AbstractTutorialActivity extends Activity
 {
   private ListIterator<InfoData> dataIterator;

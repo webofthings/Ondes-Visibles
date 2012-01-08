@@ -12,6 +12,10 @@ import com.webofthings.emf.tutorials.FrequenciesTutorialActivity;
 import com.webofthings.emf.tutorials.PreventionTutorialActivity;
 import com.webofthings.emf.tutorials.RisksTutorialActivity;
 
+/**
+ * This Activity is used to pick a tutorial.
+ * @author <a href="http://www.guinard.org">Dominique Guinard</a>
+ */
 public class TutorialPickerActivity extends ListActivity
 {
   public void onCreate(Bundle savedInstanceState)

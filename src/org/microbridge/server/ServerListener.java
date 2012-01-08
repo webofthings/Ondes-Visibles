@@ -3,7 +3,7 @@ package org.microbridge.server;
 /**
  * 
  * Server listener interface.
- * 
+ * from the http://code.google.com/p/microbridge/ project
  * @author Niels Brouwers
  *
  */

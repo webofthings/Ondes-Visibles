@@ -5,6 +5,10 @@ import java.util.LinkedList;
 import com.webofthings.emf.R;
 import com.webofthings.emf.utils.InfoData;
 
+/**
+ * This is the tutorial about the basics frequencies in EMFs.
+ * @author <a href="http://www.guinard.org">Dominique Guinard</a>
+ */
 public class FrequenciesTutorialActivity extends AbstractTutorialActivity
 {
   LinkedList<InfoData> infoDataList;

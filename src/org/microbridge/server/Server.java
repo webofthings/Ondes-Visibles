@@ -9,7 +9,7 @@ import java.util.concurrent.CopyOnWriteArrayList;
 
 /**
  * Lightweight TCP server that supports multiple clients connecting on a given port. 
- * 
+ * from the http://code.google.com/p/microbridge/ project
  * @author Niels Brouwers
  *
  */

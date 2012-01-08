@@ -17,7 +17,6 @@ import android.util.Log;
 
 /**
  * This class is used to store measurements in a file on the SD card.
- * 
  * @author <a href="http://www.guinard.org">Dominique Guinard</a>
  * 
  */

@@ -8,6 +8,10 @@ import android.os.Bundle;
 
 import com.webofthings.emf.R;
 
+/**
+ * This class is used to pass parameters from one activity to the other.
+ * @author <a href="http://www.guinard.org">Dominique Guinard</a>
+ */
 public class Params {
 	public static final String LF_COMMAND = "l";
 	public static final String HF_COMMAND = "h";

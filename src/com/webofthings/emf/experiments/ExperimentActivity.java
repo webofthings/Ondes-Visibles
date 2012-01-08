@@ -11,6 +11,10 @@ import com.webofthings.emf.R.layout;
 import com.webofthings.emf.R.string;
 import com.webofthings.emf.utils.Params;
 
+/**
+ * This Activity is used to display instructions or the conclusion of an experiment.
+ * @author <a href="http://www.guinard.org">Dominique Guinard</a>
+ */
 public class ExperimentActivity extends Activity {
 	private Params params;
 	private ExperimentInfo currentExperiment;

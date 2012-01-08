@@ -10,8 +10,9 @@ import android.os.Handler;
 import android.util.Log;
 
 /**
+ * This class is used to simulate the Adruino and Ondes-Visible sensor for debugging or
+ * testing purposes.
  * @author <a href="http://www.guinard.org">Dominique Guinard</a>
- *
  */
 
 public class ArduinoLinkSimulator extends ArduinoEMFAppLink
