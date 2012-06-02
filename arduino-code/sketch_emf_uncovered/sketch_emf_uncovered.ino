@@ -2,11 +2,15 @@
 #include <Adb.h>
 
 #define samples 300
+// Set to 1 to get debug messages in the Serial Monitor
 #define debug 1
+// Set to 0 if you do not have an Android device/bridge and want to use
+// the Serial Monitor only
+#define withAndroid 0
 
-// Written by Dominique Guinard as part of the project "ondes visibles"
+// Written by Dominique Guinard as part of the project "ondes-visibles"
 // for cudrefin02.ch and webofthings.com
-// info: guinard.org
+// info: http://code.google.com/p/ondes-visibles/
 
 // Setting the sensor pins.
 int lfAnalogIn = 0;
@@ -70,16 +74,22 @@ void setup()
   Serial.begin(57600);
 
   currentSensor = lfAnalogIn;
+  // To manually test the hf sensor, uncomment this:
+  // currentSensor = hfAnalogIn;
   currentNoise = noiseLf;
   
   // Note start time
   lastTime = millis();  
 
   // Initialise the ADB subsystem.  
-  ADB::init();
+  if (withAndroid) ADB::init();
 
   // Open an ADB stream to the phone's shell. Auto-reconnect
-  connection = ADB::addConnection("tcp:4568", true, adbEventHandler);  
+  if (withAndroid) connection = ADB::addConnection("tcp:4568", true, adbEventHandler);
+
+  // Activate the sensor in case we don't have an Android device to do it...
+  if (!withAndroid) sense = true; 
+  
 }
 
 // Given a value read from the analogRead, the function returns the voltage.
@@ -150,20 +160,21 @@ int cancelNoise(int value) {
 }
 
 void loop()
-{
+{    
       if ((millis() - lastTime) > 100 && sense)
       {
+        //Serial.println("In the loop!");
         //int data = analogRead(currentSensor);
         int value = getPeakSensorValue(currentSensor);
         value = cancelNoise(value);
 
         if (debug) Serial.println(getVoltageForValue(value));
         
-        connection->write(2, (uint8_t*)&value);
+        //connection->write(2, (uint8_t*)&value);
         if (debug) Serial.println(value);
         
         lastTime = millis();
       }
       // Poll the link to Android
-      ADB::poll();
+      if (withAndroid) ADB::poll();
 }
