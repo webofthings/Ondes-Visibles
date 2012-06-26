@@ -6,7 +6,7 @@
 #define debug 1
 // Set to 0 if you do not have an Android device/bridge and want to use
 // the Serial Monitor only
-#define withAndroid 0
+#define withAndroid 1
 
 // Written by Dominique Guinard as part of the project "ondes-visibles"
 // for cudrefin02.ch and webofthings.com
@@ -75,7 +75,7 @@ void setup()
 
   currentSensor = lfAnalogIn;
   // To manually test the hf sensor, uncomment this:
-  // currentSensor = hfAnalogIn;
+  //currentSensor = hfAnalogIn;
   currentNoise = noiseLf;
   
   // Note start time
@@ -170,7 +170,7 @@ void loop()
 
         if (debug) Serial.println(getVoltageForValue(value));
         
-        //connection->write(2, (uint8_t*)&value);
+        connection->write(2, (uint8_t*)&value);
         if (debug) Serial.println(value);
         
         lastTime = millis();
