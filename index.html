@@ -8,7 +8,7 @@
 
   <link rel="stylesheet" type="text/css" media="screen" href="stylesheets/stylesheet.css">
 
-  <title>Ondes-visibles</title>
+  <title>Ondes-Visibles</title>
 </head>
 
 <body>
@@ -18,8 +18,8 @@
     <header class="inner">
       <a id="forkme_banner" href="https://github.com/webofthings/Ondes-Visibles">View on GitHub</a>
 
-      <h1 id="project_title">Ondes-visibles</h1>
-      <h2 id="project_tagline">Android + Arduino app for monitoring LF and HF Electromagnetic Fields</h2>
+      <h1 id="project_title">Ondes-Visibles</h1>
+      <h2 id="project_tagline">Android + Arduino app for monitoring<br>LF and HF Electromagnetic Fields</h2>
 
       <section id="downloads">
         <a class="zip_download_link" href="https://github.com/webofthings/Ondes-Visibles/zipball/master">Download this project as a .zip file</a>
@@ -32,23 +32,46 @@
   <div id="main_content_wrap" class="outer">
     <section id="main_content" class="inner">
       <iframe width="560" height="315" src="//www.youtube.com/embed/J_Jm_riCwTw" frameborder="0" allowfullscreen></iframe>
-      
+
       <h3>
-        <a name="welcome-to-github-pages" class="anchor" href="#welcome-to-github-pages"><span class="octicon octicon-link"></span></a>Welcome to GitHub Pages.</h3>
+        <a name="welcome-to-github-pages" class="anchor" href="#welcome-to-github-pages"><span class="octicon octicon-link"></span></a>What is it all about?</h3>
 
-        <p>This automatic page generator is the easiest way to create beautiful pages for all of your projects. Author your page content here using GitHub Flavored Markdown, select a template crafted by a designer, and publish. After your page is generated, you can check out the new branch:</p>
+        <p>We don't have the sensors to see or feel electromagnetic fields yet, they might have some impact on us (still an "under-research" topic, see <a href="http://www.who.int/peh-emf/about/WhatisEMF/en/index5.html">WHO</a>). Ondes Visibles! is an Android + Arduino application that helps people experimenting with and raising their awareness of electromagnetic fields (EMFs). It features tutorials giving you the very basics of EMFs as well as interactive experiments for low (LF) and high (HF) frequencies using home-made sensors.</p>
 
-        <pre><code>$ cd your_repo_root/repo_name
-          $ git fetch origin
-          $ git checkout gh-pages
-        </code></pre>
+        <p>Ondes Visibles! is a collaboration between the <a href="http://www.cudrefin02.ch" rel="nofollow">Cudrefin02 foundation</a> and <a href="http://www.webofthings.org" rel="nofollow">the Web of Things team</a> and <a href="http://www.vs.inf.ethz.ch" rel="nofollow">ETH Zurich</a>.</p>
 
-        <p>If you're using the GitHub for Mac, simply sync your repository and you'll see the new branch.</p>
 
         <h3>
-          <a name="designer-templates" class="anchor" href="#designer-templates"><span class="octicon octicon-link"></span></a>Designer Templates</h3>
+          <a name="designer-templates" class="anchor" href="#designer-templates"><span class="octicon octicon-link"></span></a>How does it work?</h3>
 
-          <p>We've crafted some handsome templates for you to use. Go ahead and continue to layouts to browse through them. You can easily go back to edit your page before publishing. After publishing your page, you can revisit the page generator and switch to another theme. Your Page content will be preserved if it remained markdown format.</p>
+          <p>We plug an LF and HF sensor to an Arduino board. Then, using a USB bridge, we communicate the measurements to an Android mobile phone through a USB wire and visualize the data in graphs.</p>
+
+
+        <h3>
+          <a name="designer-templates" class="anchor" href="#designer-templates"><span class="octicon octicon-link"></span></a>I want to build it! Where do I start?</h3>
+
+          <h4>Software</h4>
+          <p>You&#x27;ll need the Arduino source code as well as the <a href="ondes-visibles.apk" rel="nofollow">Android application</a>. Both of them are open-source and <a href="https://github.com/webofthings/Ondes-Visibles" rel="nofollow">available on GitHub</a>.</p>
+
+          <p>To install it on an Android phone simply scan the QR below.</p>
+          <p><img src="images/qr-android-app.png"></p>
+
+          <p>Note that the Android app and tutorials are currently available in German, French and English, if you would like to translate it or have a great interest in a translated version, drop us a mail. </p>
+
+          <p>Obviously, to run the app you&#x27;ll also need an Android phone: we tested the software on the HTC Hero 1.5 and the Nexus One 2.36 but it should work on any 1.5+ but ideally no more than 4.2 (see <a href="https://code.google.com/p/microbridge/issues/detail?id=21"> this discussion!</a>).</p>
+
+          <p><img src="images/graph-lf-menu.png"></p>
+
+          <h4>Hardware</h4>
+          <p>You can build it yourself! You&#x27;ll need: an Arduino (preferably Uno), a USB Host shield (preferably the one from <a href="http://www.circuitsathome.com/products-page/arduino-shields/usb-host-shield-2-0-for-arduino" rel="nofollow">Circuits@Home</a>), a LT5534 RF Power Detector, a couple of cables and resistors. </p>
+
+          <p>Building the high-frequency sensor basically just requires a resistor and a rigid cable, there is a nice <a href="http://www.aaronalai.com/emf-detector" rel="nofollow">tutorial</a> here.</p>
+
+          <p>Building the high-frequency sensor is slightly more complex and is probably the hardest part of the project as it requires solid soldering skills, but again, there are two nice tutorials with pictures and schematics to build this part: <a href="http://code.google.com/p/arduino-rfsensor/" rel="nofollow">Arduino RF sensor project</a> and <a href="http://interface.khm.de/index.php/lab/experiments/radio-signal-strength-sensor/" rel="nofollow">Radio signal strength project</a>.</p>
+
+          <p><img src="images/device_bare_web_ondes_visibles.jpg"></p>
+
+          <p><img src="images/device_box_web_ondes_visibles.jpg"></p>
 
           <h3>
             <a name="authors-and-contributors" class="anchor" href="#authors-and-contributors"><span class="octicon octicon-link"></span></a>Authors and Contributors</h3>
@@ -65,7 +88,7 @@
           </footer>
         </div>
 
-        
+
 
       </body>
       </html>
